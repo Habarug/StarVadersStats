@@ -50,3 +50,12 @@ class SVStats:
                 & (self._load.artifactdb["Rarity"] != "N/A")
             ]["Artifact"]
         ]
+
+    @property
+    def pilots(self):
+        """Returns pilots in correct order, but only includes the ones you have actually used."""
+        return [
+            pilot
+            for pilot in _load.pilotDict.values()
+            if pilot in self.df_runs["Pilot"].unique()
+        ]

@@ -45,11 +45,11 @@ class Load:
             {
                 "runID": [run["rundata"]["runID"] for _, run in runs.items()],
                 "Time": [_get_datetime(dir) for dir in runs],
-                "PilotName": [
+                "Pilot": [
                     _get_pilotname(run["playerdata"]["PilotName"])
                     for _, run in runs.items()
                 ],
-                "ClassName": [
+                "Class": [
                     _get_classname(run["playerdata"]["ClassName"])
                     for _, run in runs.items()
                 ],
