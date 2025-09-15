@@ -7,27 +7,27 @@ import wikitextparser as wtp
 
 curDir = os.path.dirname(__file__)
 
-pilotDict = {
-    "0": "Roxy",
-    "1": "Zeke",
-    "3": "Noel",
-    "100": "Shun",
-    "101": "Hali",
-    "102": "Kaia",
-    "200": "Iris",
-    "201": "Xenn",
-    "202": "Garu",
-    "203": "Sura",
-}
-
-classDict = {
-    "0": "Gunner",
-    "1": "Stinger",
-    "2": "Keeper",
-}
-
 
 class Load:
+    pilotDict = {
+        "0": "Roxy",
+        "1": "Zeke",
+        "3": "Noel",
+        "100": "Shun",
+        "101": "Hali",
+        "102": "Kaia",
+        "200": "Iris",
+        "201": "Xenn",
+        "202": "Garu",
+        "203": "Sura",
+    }
+
+    classDict = {
+        "0": "Gunner",
+        "1": "Stinger",
+        "2": "Keeper",
+    }
+
     def __init__(self, rootDir):
         self.rootDir = rootDir
 
@@ -240,15 +240,15 @@ def _get_link_text(string):
 
 
 def _get_pilotname(i):
-    if str(i) in pilotDict:
-        return pilotDict[str(i)]
+    if str(i) in Load.pilotDict:
+        return Load.pilotDict[str(i)]
     else:
         return str(i)
 
 
 def _get_classname(i):
-    if str(i) in classDict:
-        return classDict[str(i)]
+    if str(i) in Load.classDict:
+        return Load.classDict[str(i)]
     else:
         return str(i)
 

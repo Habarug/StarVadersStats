@@ -56,6 +56,14 @@ class SVStats:
         """Returns pilots in correct order, but only includes the ones you have actually used."""
         return [
             pilot
-            for pilot in _load.pilotDict.values()
+            for pilot in self._load.pilotDict.values()
             if pilot in self.df_runs["Pilot"].unique()
         ]
+
+    @property
+    def df_victories(self):
+        return self.df_runs[self.df_runs["Success"] > 0]
+
+    @property
+    def df_truevictories(self):
+        return self.df_runs[self.df_runs["Success"] == 3]
