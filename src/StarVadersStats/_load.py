@@ -35,6 +35,7 @@ class Load:
         self.artifactdb = loadArtifactDatabase()
 
         self.runs = loadRuns(self.rootDir)
+        self._make_difficulty_dict()
 
     def get_df_runs(self):
         runs = self.runs
@@ -146,6 +147,19 @@ class Load:
             return self.artifactdb[self.artifactdb["ID"] == int(ID)]["Artifact"].iloc[0]
         else:
             return str(ID)
+
+    def _make_difficulty_dict(self):
+        difficulties = set(
+            [run["challengedata"]["Difficulty"] for _, run in self.runs.items()]
+        )
+        self.difficultyDict = {}
+        for difficulty in difficulties:
+            for _, run in self.runs.items():
+                if run["challengedata"]["Difficulty"] == difficulty:
+                    self.difficultyDict[difficulty] = run["challengedata"][
+                        "ChallengeName"
+                    ]
+                    break
 
 
 def loadRuns(rootDir):
