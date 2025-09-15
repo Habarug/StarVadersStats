@@ -29,5 +29,24 @@ class SVStats:
 
         self._load = _load.Load(self.rundir)
         self.df_runs = self._load.get_df_runs()
-        self.df_cards = self._load.get_df_cards()
-        self.df_artifacts = self._load.get_df_artifacts()
+        self._df_cards = self._load.get_df_cards()
+        self._df_artifacts = self._load.get_df_artifacts()
+
+    @property
+    def df_cards(self):
+        return self._df_cards[
+            self._load.carddb[
+                (self._load.carddb["Rarity"] != "Starter")
+                & (self._load.carddb["Rarity"] != "Created")
+                & (self._load.carddb["Rarity"] != "Junk")
+            ]["Card"]
+        ]
+
+    @property
+    def df_artifacts(self):
+        return self._df_artifacts[
+            self._load.artifactdb[
+                (self._load.artifactdb["Rarity"] != "Starter")
+                & (self._load.artifactdb["Rarity"] != "N/A")
+            ]["Artifact"]
+        ]
