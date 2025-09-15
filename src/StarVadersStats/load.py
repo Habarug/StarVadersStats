@@ -44,8 +44,10 @@ def loadRuns(rootDir):
                     run["challengedata"]["Difficulty"] for _, run in runs.items()
                 ],
                 "Success": [
-                    2
+                    3
                     if run["rundata"]["isTrueVictory"]
+                    else 2
+                    if run["rundata"]["actNumber"] == 4
                     else 1
                     if run["rundata"]["isVictory"]
                     else 0
@@ -63,6 +65,17 @@ def loadRuns(rootDir):
                     run["playerdata"]["totalStarsEarned"] for _, run in runs.items()
                 ],
                 "Doom": [run["playerdata"]["doomAmount"] for _, run in runs.items()],
+                "TotalDoom": [
+                    run["rundata"]["TotalDoomCount"] for _, run in runs.items()
+                ],
+                "InvadersDefeated": [
+                    run["rundata"]["InvadersDefeatedCount"] for _, run in runs.items()
+                ],
+                "MaxCombo": [run["rundata"]["MaxCombo"] for _, run in runs.items()],
+                "FinalRoom": [
+                    f"{run['rundata']['actNumber']}.{run['rundata']['dayNumber']}"
+                    for _, run in runs.items()
+                ],
                 "Seed": [run["rundata"]["seed"] for _, run in runs.items()],
             }
         )
