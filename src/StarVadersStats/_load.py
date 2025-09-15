@@ -98,8 +98,26 @@ class Load:
             (self.carddb["Rarity"] != "Junk") & (self.carddb["Rarity"] != "Created")
         ]
 
-        df_cards = pd.DataFrame(columns=carddb["Card"])
+        # decks = [[self._get_card_name(card) for card in deck] for run["playerdata"]["deckCardDataList"]["Card"] for _, run in self.runs.items() for deck in run]
+        # decks = [[decks["Card"]] for _, run in self.runs.items() for decks in run["playerdata"]["deckCardDataList"]]
+        decks = [
+            [
+                self._get_card_name(deck["Card"])
+                for deck in run["playerdata"]["deckCardDataList"]
+            ]
+            for _, run in self.runs.items()
+        ]
+        # df_cards = pd.DataFrame(columns=carddb["Card"])
+        df_cards = pd.DataFrame(
+            {
+                card: [sum([c == card for c in deck]) for deck in decks]
+                for card in carddb["Card"]
+            }
+        )
         return df_cards
+
+    def _get_card_name(self, i):
+        return self.carddb[self.carddb["ID"] == str(i)]["Card"].iloc[0]
 
 
 def loadRuns(rootDir):
