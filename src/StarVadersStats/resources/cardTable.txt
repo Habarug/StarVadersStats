@@ -1,0 +1,611 @@
+{| class="wikitable sortable"
+|-
+! Card !! class="unsortable" | Image !! ID !! Class & Pack/Pilot !! Rarity !! Type !! Cost !! class="unsortable" | Description !! class="unsortable" | Notes
+|-
+| [[Shift]] || [[File:CardShift.png|100px|frameless|Shift Card Image]] || 0 || [[Gunner]] || Starter || Move || 1 || Move 1 to 2 tiles. ||
+|-
+| [[Fire! (Card)|Fire!]] || [[File:CardFire.png|100px|frameless|Fire! Card Image]] || 1 || [[Gunner]] || Starter || Attack || 1 || Fire 1 '''Bullet''' upward. ||
+|-
+| [[Afterburn]] || [[File:CardAfterburn.png|100px|frameless|Afterburn Card Image]] || 6 || [[Gunner]] || Common || Move || 0 || Move 1 to 4 tiles. Your next card played this turn costs +1 '''Heat'''. ||
+|-
+| [[Momentum]] || [[File:CardMomentum.png|100px|frameless|Momentum Card Image]] || 9 || [[Gunner]] || Common || Move || 0 || Move 1 to 2 tiles. You get +1 '''Heat''' sink next turn ||
+|-
+| [[Rush]] || [[File:CardRush.png|100px|frameless|Rush Card Image]] || 78 || [[Gunner]] || Common || Move || 0 || Move 1 to 4 tiles. Strike your mech. ||
+|-
+| [[Ricochet Fire!]] || [[File:CardRicochetFire.png|100px|frameless|Ricochet Fire! Card Image]] || 89 || [[Gunner]] || Common || Attack || 0 || Fire 1 '''Bullet''' diagonally up-left. It ricochets off grid edges and '''Shielded''' entities up to 3 times. ||
+|-
+| [[Nova Bomb (Card)|Nova Bomb]] || [[File:CardNovaBomb.png|100px|frameless|Nova Bomb Card Image]] || 2 || [[Gunner]] || Common || Tactic || 1 || Spawn a '''[[Nova Bomb (Item)|Nova Bomb]]''' up to 4 tiles away. When destroyed, detonates and strikes adjacent tiles ||
+|-
+| [[Artillery Strike]] || [[File:CardArtilleryStrike.png|100px|frameless|Artillery Strike Card Image]] || 12 || [[Gunner]] || Common || Attack || 1 || Choose a tile on the top or bottom row. Fire 1 '''Bullet''' from that tile when your turn ends ||
+|-
+| [[Aegis Bomb (Card)|Aegis Bomb]] || [[File:CardAegisBomb.png|100px|frameless|Aegis Bomb Card Image]] || 19 || [[Gunner]] || Common || Tactic || 1 || Spawn an '''[[Aegis Bomb (Item)|Aegis Bomb]]''' up to 4 tiles away ||
+|-
+| [[Throw Bomb]] || [[File:CardThrowBomb.png|100px|frameless|Throw Bomb Card Image]] || 23 || [[Gunner]] || Common || Tactic || 1 || Throw a '''[[Nova Bomb (Item)|Nova Bomb]]''' up that pushes the first entity hit. ||
+|-
+| [[Remote]] || [[File:CardRemote.png|100px|frameless|Remote Card Image]] || 25 || [[Gunner]] || Common || Move || 1 || Move 1 to 2 tiles. Then, push all '''Bombs''' in the same direction || This also affects non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Into the Fray]] || [[File:CardIntoTheFray.png|100px|frameless|Into the Fray Card Image]] || 30 || [[Gunner]] || Common || Move || 1 || Move 1 to 4 tiles. If you enter a '''Danger Zone''', your next '''Attack''' this turn is free. ||
+|-
+| [[Quick Fire!]] || [[File:CardQuickFire.png|100px|frameless|Quick Fire! Card Image]] || 52 || [[Gunner]] || Common || Attack || 1 || Fire 1 '''Bullet''' upward. If you destroy an entity, make the most expensive card in your hand free this turn. ||
+|-
+| [[Lock n' Load]] || [[File:CardLockNLoad.png|100px|frameless|Lock n' Load Card Image]] || 63 || [[Gunner]] || Common || Tactic || 1 || Draw 3 cards. Cards drawn with '''[[:Category: Fire! cards|Fire!]]''' in its title are free this turn. || Only cards that have the exact phrase "Fire!" in their title are affected. For example, [[Fire EVERYTHING!]] is not affected, but [[MisFire!]] is. Additionally, any card with the [[Fire! (Component)|Fire! component]] is affected.
+|-
+| [[Burst Fire!]] || [[File:CardBurstFire.png|100px|frameless|Burst Fire! Card Image]] || 80 || [[Gunner]] || Common || Attack || 1 || Fire 1 '''Bullet''' upward. Push your mech 1 tile towards the right and fire another '''Bullet''' upward. ||
+|-
+| [[Backtrack]] || [[File:CardBacktrack.png|100px|frameless|Backtrack Card Image]] || 120 || [[Gunner]] || Common || Move || 1 || Move to any tile in the bottom 3 rows. Draw all 0 cost cards in your draw pile. ||
+|-
+| [[Cross Fire!]] || [[File:CardCrossFire.png|100px|frameless|Cross Fire! Card Image]] || 14 || [[Gunner]] || Common || Attack || 2 || Fire 1 '''Bullet''' upward that splits into 2 on hit. ||
+|-
+| [[Flamethrower]] || [[File:CardFlamethrower.png|100px|frameless|Flamethrower Card Image]] || 15 || [[Gunner]] || Common || Attack || 2 || Choose a card in your hand and burn it. Strike tiles in a large cone above you. ||
+|-
+| [[Rocket Fist]] || [[File:CardRocketFist.png|100px|frameless|Rocket Fist Card Image]] || 58 || [[Gunner]] || Common || Attack || 2 || Launch a '''Fist''' upward that strikes and pushes entities. || The fist affects the targetted tile and the tiles to the left and right, striking and pushing entities there up 1 tile.
+|-
+| [[Explosive Shield]] || [[File:CardExplosiveShield.png|100px|frameless|Explosive Shield Card Image]] || 26 || [[Gunner]] || Rare || Tactic || 0 || Give an '''Explosive Shield''' to a non-'''Bomb''' entity. ||
+|-
+| [[Incinerate]] || [[File:CardIncinerate.png|100px|frameless|Incinerate Card Image]] || 64 || [[Gunner]] || Rare || Tactic || 0 || Purge this card and ALL of your '''Burnt''' cards. Create that many '''[[Sparks]]''' in your hand. ||
+|-
+| [[Breakdown]] || [[File:CardBreakdown.png|100px|frameless|Breakdown Card Image]] || 67 || [[Gunner]] || Rare || Attack || 0 || Strike your mech. It detonates and strikes adjacent tiles. ||
+|-
+| [[Detonator (Card)|Detonator]] || [[File:CardDetonator.png|100px|frameless|Detonator Card Image]] || 70 || [[Gunner]] || Rare || Tactic || 0 || Spawn a '''[[Detonator (Item)|Detonator]]''' up to 4 tiles away. || This also affects non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Cluster Fire!]] || [[File:CardClusterFire.png|100px|frameless|Cluster Fire! Card Image]] || 28 || [[Gunner]] || Rare || Attack || 1 || Fire 1 '''Bullet''' up from your mech and from each '''Bomb'''. ||
+|-
+| [[Scorching Sun]] || [[File:CardScorchingSun.png|100px|frameless|Scorching Sun Card Image]] || 29 || [[Gunner]] || Rare || Attack || 1 || Strike tiles in a line up to 2 tiles away. Range is increased by 1 for each '''Burnt''' card you own. ||
+|-
+| [[Plasma Fire!]] || [[File:CardPlasmaFire.png|100px|frameless|Plasma Fire! Card Image]] || 32 || [[Gunner]] || Rare || Attack || 1 || Fire 1 '''Bullet''' upward. Chains to random nearby invaders for each '''Junk''' or '''Burnt''' card in your hand and discard. ||
+|-
+| [[Salve]] || [[File:CardSalve.png|100px|frameless|Salve Card Image]] || 37 || [[Gunner]] || Rare || Tactic || 1 || Unburn ALL '''Burnt''' cards and make them free this turn. ||
+|-
+| [[MisFire!]] || [[File:CardMisFire.png|100px|frameless|MisFire! Card Image]] || 53 || [[Gunner]] || Rare || Attack || 1 || Fire 4 '''Bullets''', one in each diagonal direction. Return all 0 cost cards from your discard pile to your hand. ||
+|-
+| [[Reactor Burn]] || [[File:CardReactorBurn.png|100px|frameless|Reactor Burn Card Image]] || 54 || [[Gunner]] || Rare || Attack/Move || 1 || Move 1 to 3 tiles in a cardinal direction, striking nearby tiles. Create 2 '''[[Meltdown]]''' in your discard. ||
+|-
+| [[Decoy Bombs]] || [[File:CardDecoyBombs.png|100px|frameless|Decoy Bombs Card Image]] || 73 || [[Gunner]] || Rare || Tactic || 1 || Spawn 2 '''[[Decoy Bomb|Decoy Bombs]]''' up to 4 tiles away. ||
+|-
+| [[Eject]] || [[File:CardEject.png|100px|frameless|Eject Card Image]] || 46 || [[Gunner]] || Rare || Tactic || 2 || Reset your deck and draw 3 cards. If this overheats, you get +1 '''Doom'''. || Reset: Purge ALL cards, and add cards from your campaign deck back into your draw pile.
+|-
+| [[Siphon Fire!]] || [[File:CardSiphonFire.png|100px|frameless|Siphon Fire! Card Image]] || 47 || [[Gunner]] || Rare || Attack || 2 || Fire 1 '''Bullet''' upward. If you break a '''Shield''', you get +1 '''Heat''' sink for the remainder of the encounter. ||
+|-
+| [[Bomb Rain]] || [[File:CardBombRain.png|100px|frameless|Bomb Rain Card Image]] || 66 || [[Gunner]] || Rare || Tactic || 2 || Spawn 3 '''[[Nova Bomb (Item)|Nova Bombs]]''' on random tiles. ||
+|-
+| [[Titan Rocket]] || [[File:CardTitanRocket.png|100px|frameless|Titan Rocket Card Image]] || 69 || [[Gunner]] || Rare || Attack || 2 || Choose a tile and purge this card. Launch a '''Rocket''' at a it when your turn ends. || Rocket explosions do not count as detonations.
+|-
+| [[Overclock]] || [[File:CardOverclock.png|100px|frameless|Overclock Card Image]] || 65 || [[Gunner]] || Legendary || Tactic || 0 || The next '''Attack''' you play this turn gets +2 '''Repeat''' and +2 '''Heat''' cost. ||
+|-
+| [[Liquid Coolant]] || [[File:CardLiquidCoolant.png|100px|frameless|Liquid Coolant Card Image]] || 108 || [[Gunner]] || Legendary || Tactic/Junk || 0 || While this card is in your hand, '''Attack''' cards do not overheat. ||
+|-
+| [[Big Bang!]] || [[File:CardBigBang.png|100px|frameless|Big Bang! Card Image]] || 24 || [[Gunner]] || Legendary || Attack || 1 || Detonate ALL '''Bombs'''. Respawn any that were destroyed. || This also affects non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Plasma Bomb (Card)|Plasma Bomb]] || [[File:CardPlasmaBomb.png|100px|frameless|Plasma Bomb Card Image]] || 72 || [[Gunner]] || Legendary || Tactic || 1 || Spawn a '''[[Plasma Bomb (Item)|Plasma Bomb]]''' up to 4 tiles away. ||
+|-
+| [[Annihilation]] || [[File:CardAnnihilation.png|100px|frameless|Annihilation Card Image]] || 75 || [[Gunner]] || Legendary || Attack || 1 || Detonate a '''Bomb''' with +2 radius. Burn adjacent cards. || This can also affect non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Say Hello to...]] || [[File:CardSayHelloTo.png|100px|frameless|Say Hello to... Card Image]] || 92 || [[Gunner]] || Legendary || Tactic || 1 || Spawn '''[[...My Little Friend]]''' up to 2 tiles away. It copies '''Bullets''' fired by cards with '''[[Fire! (Card Type)|Fire!]]''' in its title. ||
+|-
+| [[BackFire!]] || [[File:CardBackFire.png|100px|frameless|BackFire! Card Image]] || 10 || [[Gunner]] || Legendary || Attack/Move || 2 || Move 1 to 3 tiles in ANY direction. Fire 3 '''Bullets''' in the opposite direction. || Only allows movement in cardinal or diagonal directions.
+|-
+| [[Fire EVERYTHING!]] || [[File:CardFireEverything.png|100px|frameless|Fire EVERYTHING! Card Image]] || 13 || [[Gunner]] || Legendary || Attack || 2 || Shuffle your discard into your draw pile, then draw and play ALL cards with '''[[Fire! (Card Type)|Fire!]]''' in its title for free. || Only cards that have the exact phrase "Fire!" in their title are affected. For example, other copies of [[Fire EVERYTHING!]] are not affected, but [[MisFire!]] is. Additionally, any card with the [[Fire! (Component)|Fire! component]] is affected.
+|-
+| [[HELL Fire!]] || [[File:CardHellFire.png|100px|frameless|HELL Fire! Card Image]] || 56 || [[Gunner]] || Legendary || Attack || 3 || Fire 1 '''Bullet''' upward in a random column above you for each '''Heat''' in your '''Heat''' sink. ||
+|-
+| [[Sparks]] || [[File:CardSparks.png|100px|frameless|Sparks Card Image]] || 57 || [[Gunner]] || Created || Attack || 0 || Fire 1 '''Bullet''' upward. Purge this card. ||
+|-
+| [[Meltdown]] || [[File:CardMeltdown.png|100px|frameless|Meltdown Card Image]] || 55 || [[Gunner]] || Junk || Junk || 1 || Purge this card. If unplayed, burn this card. ||
+|-
+| [[Triple Fire!]] || [[File:CardTripleFire.png|100px|frameless|Triple Fire! Card Image]] || 8 || [[Gunner]] ([[Roxy]]) || Starter || Attack || 1 || Spray 3 '''Bullets''' upwards and diagonally. ||
+|-
+| [[Slow Burn]] || [[File:CardSlowBurn.png|100px|frameless|Slow Burn Card Image]] || 113 || [[Gunner]] ([[Roxy]]) || Common || Tactic || 0 || Draw +1 card next turn. Refresh your '''[[Fire Starter]]''' artifact. ||
+|-
+| [[Trailblazer]] || [[File:CardTrailblazer.png|100px|frameless|Trailblazer Card Image]] || 112 || [[Gunner]] ([[Roxy]]) || Common || Move || 1 || Move 1 to 4 tiles. When this becomes '''Burnt''', get +1 '''Heat''' sink for the remainder of the encounter. ||
+|-
+| [[Blaze]] || [[File:CardBlaze.png|100px|frameless|Blaze Card Image]] || 61 || [[Gunner]] ([[Roxy]]) || Rare || Tactic || 0 || Play a card in your hand for free and purge it. Works on '''Burnt''' cards. ||
+|-
+| [[Fuel]] || [[File:CardFuel.png|100px|frameless|Fuel Card Image]] || 33 || [[Gunner]] ([[Roxy]]) || Rare || Tactic/Junk || 1 || When you burn another card, play '''Fuel''' instead. The next '''Attack''' you play gets +1 '''Repeat'''. ||
+|-
+| [[Ready Rocket!]] || [[File:CardReadyRocket.png|100px|frameless|Ready Rocket! Card Image]] || 119 || [[Gunner]] ([[Roxy]]) || Legendary || Tactic || 2 || Add a copy of '''[[Reckoning]]''' to your discard pile. ||
+|-
+| [[Reckoning]] || [[File:CardReckoning.png|100px|frameless|Reckoning Card Image]] || 105 || [[Gunner]] ([[Roxy]]) || Created || Attack || 5 || Launch 3 '''Rockets''' at random invaders. Prioritizes '''Shields'''. || Rocket explosions do not count as detonations.
+|-
+| [[Cold Gust]] || [[File:CardColdGust.png|100px|frameless|Cold Gust Card Image]] || 151 || [[Gunner]] ([[Noel]]) || Starter || Tactic || 0 || Pull any entity up to 2 tiles left or right. ||
+|-
+| [[Flurry Fire!]] || [[File:CardFlurryFire.png|100px|frameless|Flurry Fire! Card Image]] || 99 || [[Gunner]] ([[Noel]]) || Starter || Attack || 1 || Fire 1 '''Bullet''' upward. Automatically played for free after a card with '''[[Fire! (Card Type)|Fire!]]''' in its title is played. || Also triggers when a card with the [[Fire! (Component)|Fire! component]] is played.
+|-
+| [[Novalanche]] || [[File:CardNovalanche.png|100px|frameless|Novalanche Card Image]] || 98 || [[Gunner]] ([[Noel]]) || Starter || Tactic || 1 || Spawn a '''[[Nova Bomb (Item)|Nova Bomb]]''' up to 4 tiles away. If unplayed, gets +1 '''Repeat''' next time it's played. ||
+|-
+| [[Icicle]] || [[File:CardIcicle.png|100px|frameless|Icicle Card Image]] || 90 || [[Gunner]] ([[Noel]]) || Common || Attack || 1 || Strike 3 tiles in a diagonal. When drawn, unburns itself and becomes '''Frozen'''. ||
+|-
+| [[Snowbomb! (Card)|Snowbomb!]] || [[File:CardSnowbomb.png|100px|frameless|Snowbomb! Card Image]] || 111 || [[Gunner]] ([[Noel]]) || Common || Tactic || 1 || Throw a '''[[Snowbomb (Item)|Snowbomb]]''' up that pushes the first entity hit. ||
+|-
+| [[Cold Snap]] || [[File:CardColdSnap.png|100px|frameless|Cold Snap Card Image]] || 109 || [[Gunner]] ([[Noel]]) || Rare || Attack || 1 || Strike a random invader. Do it an additional time for each '''Frozen''' card you own. ||
+|-
+| [[Chisel]] || [[File:CardChisel.png|100px|frameless|Chisel Card Image]] || 110 || [[Gunner]] ([[Noel]]) || Rare || Tactic || 1 || Discard a card in your hand and draw 2 cards. If it was '''Frozen''', the drawn cards are free this turn. ||
+|-
+| [[Hyperfreeze]] || [[File:CardHyperfreeze.png|100px|frameless|Hyperfreeze Card Image]] || 91 || [[Gunner]] ([[Noel]]) || Legendary || Tactic || 2 || Unburns adjacent cards and make them '''Frozen'''. Give all '''Frozen''' cards in your hand +1 '''Repeat'''. ||
+|-
+| [[Tinker]] || [[File:CardTinker.png|100px|frameless|Tinker Card Image]] || 100 || [[Gunner]] ([[Zeke]]) || Starter || Tactic || 1 || Give a card the '''[[Heated]] Component''' and +1 '''Repeat''' when played ||
+|-
+| [[Survey]] || [[File:CardSurvey.png|100px|frameless|Survey Card Image]] || 117 || [[Gunner]] ([[Zeke]]) || Common || Move || 1 || Move 1 to 3 tiles. The 0 cost cards in your hand get +1 '''Repeat''' this turn. ||
+|-
+| [[Fabricate]] || [[File:CardFabricate.png|100px|frameless|Fabricate Card Image]] || 116 || [[Gunner]] ([[Zeke]]) || Common || Tactic || 2 || Create '''[[Sparks]]''', '''[[Propel]]''', and '''[[Vapor]]''' in your hand. ||
+|-
+| [[Smelt]] || [[File:CardSmelt.png|100px|frameless|Smelt Card Image]] || 114 || [[Gunner]] ([[Zeke]]) || Rare || Tactic || 0 || Burn a card in your hand. You get +1 '''Heat''' sink for the rest of the encounter. ||
+|-
+| [[Theorycraft]] || [[File:CardTheorycraft.png|100px|frameless|Theorycraft Card Image]] || 115 || [[Gunner]] ([[Zeke]]) || Rare || Tactic || 0 || Create 3 random '''Attack''' cards in your hand with the '''[[Theory]]''' component. Purge this card. ||
+|-
+| [[Prototype (Card)|Prototype]] || [[File:CardPrototype.png|100px|frameless|Prototype Card Image]] || 118 || [[Gunner]] ([[Zeke]]) || Legendary || Tactic || 0 || Spawn [[Prototype (Item)|it]] up to 2 tiles away and purge this card. It fires a '''Bullet''' upward whenever you purge a card. ||
+|-
+| [[Propel]] || [[File:CardPropel.png|100px|frameless|Propel Card Image]] || 96 || [[Gunner]] ([[Zeke]]) || Created || Move || 0 || Pull any entity 1 tile in a cardinal direction. Purge this card. ||
+|-
+| [[Vapor]] || [[File:CardVapor.png|100px|frameless|Vapor Card Image]] || 97 || [[Gunner]] ([[Zeke]]) || Created || Tactic || 0 || Get +1 '''Heat''' sink this turn. Purge this card. ||
+|-
+| [[Dash]] || [[File:CardDash.png|100px|frameless|Dash Card Image]] || 1000 || [[Stinger]] || Starter || Move || 1 || Move 1 to 3 tiles. ||
+|-
+| [[Jab (Card)|Jab]] || [[File:CardJab.png|100px|frameless|Jab Card Image]] || 1001 || [[Stinger]] || Starter || Attack || 1 || Strike an adjacent entity or draw 1 card. ||
+|-
+| [[Zap]] || [[File:CardZap.png|100px|frameless|Zap Card Image]] || 1064 || [[Stinger]] || Starter || Tactic/Move || 1 || Choose any entity. '''Shock''' it and pull it 1 tile in a cardinal direction. ||
+|-
+| [[Jutsu]] || [[File:CardJutsu.png|100px|frameless|Jutsu Card Image]] || 1002 || [[Stinger]] || Common || Tactic || 1 || Shuffle 2 '''[[Shuriken|Shurikens]]''' into your draw pile. Purge this card. ||
+|-
+| [[Galvanize]] || [[File:CardGalvanize.png|100px|frameless|Galvanize Card Image]] || 1004 || [[Stinger]] || Common || Tactic || 1 || '''Shock''' any entity. If you do, draw the top '''Flow''' card in your draw pile. ||
+|-
+| [[Cleave]] || [[File:CardCleave.png|100px|frameless|Cleave Card Image]] || 1005 || [[Stinger]] || Common || Attack || 1 || '''Flow'''. Strike all adjacent tiles. ||
+|-
+| [[Teleport]] || [[File:CardTeleport.png|100px|frameless|Teleport Card Image]] || 1008 || [[Stinger]] || Common || Move || 0 || Move to any tile and draw 1 card. Increase the '''Power''' cost of this card by 1. ||
+|-
+| [[Jaunt]] || [[File:CardJaunt.png|100px|frameless|Jaunt Card Image]] || 1014 || [[Stinger]] || Common || Tactic/Move || 1 || Choose any entity. '''Shock''' it and swap your mech with it. ||
+|-
+| [[Tendrils]] || [[File:CardTendrils.png|100px|frameless|Tendrils Card Image]] || 1016 || [[Stinger]] || Common || Attack || 1 || Draw a '''Pickup''' on the grid, or choose your mech. Strike all tiles adjacent to it. ||
+|-
+| [[Slice]] || [[File:CardSlice.png|100px|frameless|Slice Card Image]] || 1020 || [[Stinger]] || Common || Attack/Move || 1 || '''Flow'''. Move 1 to 4 tiles in a cardinal direction, striking tiles in between. ||
+|-
+| [[Claw Trap]] || [[File:CardClawTrap.png|100px|frameless|Claw Trap Card Image]] || 1021 || [[Stinger]] || Common || Tactic || 1 || '''Flow'''. Drop this card as a pickup up to 3 tiles away. When destroyed, strike this tile and draw this card. ||
+|-
+| [[Ripple]] || [[File:CardRipple.png|100px|frameless|Ripple Card Image]] || 1022 || [[Stinger]] || Common || Move || 0 || Drop the top card of your draw pile as a '''Pickup''' on your tile. Move 1 to 3 tiles away. ||
+|-
+| [[Haste]] || [[File:CardHaste.png|100px|frameless|Haste Card Image]] || 1026 || [[Stinger]] || Common || Tactic || 1 || Your next '''Move''' is free and gets +1 '''Repeat''' this turn. ||
+|-
+| [[Kunai]] || [[File:CardKunai.png|100px|frameless|Kunai Card Image]] || 1033 || [[Stinger]] || Common || Attack/Tactic || 1 || '''Throw''' a card in your hand in a cardinal direction. Draw 1 card. ||
+|-
+| [[Rope Dart]] || [[File:CardRopeDart.png|100px|frameless|Rope Dart Card Image]] || 1035 || [[Stinger]] || Common || Tactic || 0 || Pull an entity in a cardinal direction to the adjacent tile and give it '''Shock'''. ||
+|-
+| [[Flying Punch]] || [[File:CardFlyingPunch.png|100px|frameless|Flying Punch Card Image]] || 1045 || [[Stinger]] || Common || Attack/Move || 1 || Throw the top card of your discard pile in a cardinal direction and move to it. ||
+|-
+| [[Quick Jab]] || [[File:CardQuickJab.png|100px|frameless|Quick Jab Card Image]] || 1046 || [[Stinger]] || Common || Attack || 1 || Strike an adjacent entity or draw 1 card. Return a random 0 cost card from your discard pile to your hand. ||
+|-
+| [[Tempo]] || [[File:CardTempo.png|100px|frameless|Tempo Card Image]] || 1047 || [[Stinger]] || Common || Move || 1 || Move to any tile. The next '''Attack''' you play this turn is no longer discarded when played. ||
+|-
+| [[Slide]] || [[File:CardSlide.png|100px|frameless|Slide Card Image]] || 1056 || [[Stinger]] || Common || Move || 1 || Move to any tile in your column or row. '''Flow''' cards in your hand become free. ||
+|-
+| [[Overshield]] || [[File:CardOvershield.png|100px|frameless|Overshield Card Image]] || 1058 || [[Stinger]] || Common || Tactic || 0 || Gain a '''Shield'''. If you had a '''Shield''', spends 1 '''Battery''' to strike all other tiles in your row. ||
+|-
+| [[Judo Toss]] || [[File:CardJudoToss.png|100px|frameless|Judo Toss Card Image]] || 1100 || [[Stinger]] || Common || Attack || 1 || Toss an adjacent entity over your mech onto an empty tile. It strikes itself and adjacent tiles on impact. ||
+|-
+| [[Thunderclap]] || [[File:CardThunderclap.png|100px|frameless|Thunderclap Card Image]] || 1103 || [[Stinger]] || Common || Attack || 1 || '''Throw''' this card in any cardinal direction. If it hits a '''Shocked''' entity, strike all adjacent tiles to it. ||
+|-
+| [[Spear Jab]] || [[File:CardSpearJab.png|100px|frameless|Spear Jab Card Image]] || 1006 || [[Stinger]] || Rare || Attack || 2 || Strike 3 tiles in a cardinal direction. For each entity destroyed, draw 1 card. ||
+|-
+| [[N.P.K.]] || [[File:CardNPK.png|100px|frameless|N.P.K. Card Image]] || 1009 || [[Stinger]] || Rare || Attack/Move || 1 || Move above an invader and strike it. ||
+|-
+| [[En Passant]] || [[File:CardEnPassant.png|100px|frameless|En Passant Card Image]] || 1012 || [[Stinger]] || Rare || Attack/Move || 0 || Move diagonally upwards and strike the tile below you. If you destroyed an entity, do not discard. ||
+|-
+| [[Provisions]] || [[File:CardProvisions.png|100px|frameless|Provisions Card Image]] || 1018 || [[Stinger]] || Rare || Tactic || 0 || Drop a card as a '''Pickup''' up to 4 tiles away. Draw 1 card. ||
+|-
+| [[Parry]] || [[File:CardParry.png|100px|frameless|Parry Card Image]] || 1027 || [[Stinger]] || Rare || Tactic || 1 || Draw 1 card. When you would gain a '''Junk''' card this turn, gain a '''[[Charge]]''' in your hand instead. ||
+|-
+| [[Storm Cell]] || [[File:CardStormCell.png|100px|frameless|Storm Cell Card Image]] || 1037 || [[Stinger]] || Rare || Attack || 1 || '''Shock''' any entity. If it was already '''Shocked''', strike it and push all adjacent entities. ||
+|-
+| [[Power Jab]] || [[File:CardPowerJab.png|100px|frameless|Power Jab Card Image]] || 1043 || [[Stinger]] || Rare || Attack || 1 || Strike an adjacent entity or draw 1 card. Spends 1 '''Battery''' to punch with a large '''Fist''' instead. ||
+|-
+| [[Target Dummy]] || [[File:CardTargetDummy.png|100px|frameless|Target Dummy Card Image]] || 1052 || [[Stinger]] || Rare || Tactic || 0 || Spawn '''[[Dummy]]''' up to 4 tiles away. Purge this card. ||
+|-
+| [[Flicker Jab]] || [[File:CardFlickerJab.png|100px|frameless|Flicker Jab Card Image]] || 1054 || [[Stinger]] || Rare || Attack || 1 || Strike an adjacent entity or draw 1 card. If they were '''Shocked''' or '''Shielded''', strike all entities in that direction. ||
+|-
+| [[Boomerang]] || [[File:CardBoomerang.png|100px|frameless|Boomerang Card Image]] || 1060 || [[Stinger]] || Rare || Attack || 1 || '''Throw''' this card diagonally up-left which ricochets 3 times. ||
+|-
+| [[Left Foot Jab]] || [[File:CardLeftFootJab.png|100px|frameless|Left Foot Jab Card Image]] || 1062 || [[Stinger]] || Rare || Attack || 1 || Strike an adjacent entity and push it 2 tiles away. Or draw 1 card. ||
+|-
+| [[Ball Lightning]] || [[File:CardBallLightning.png|100px|frameless|Ball Lightning Card Image]] || 1083 || [[Stinger]] || Rare || Tactic || 1 || Spawn a '''[[Ball Lightning (Item)|Ball Lightning]]''' up to 4 tiles away and purge this card. It gives '''Shock''' to adjacent entities when your turn ends or when destroyed. ||
+|-
+| [[Spirit Jab]] || [[File:CardSpiritJab.png|100px|frameless|Spirit Jab Card Image]] || 1101 || [[Stinger]] || Rare || Attack || 2 || Strike an adjacent entity and the 2 nearest entities of the same type, or draw 1 card. ||
+|-
+| [[Chain Lightning]] || [[File:CardChainLightning.png|100px|frameless|Chain Lightning Card Image]] || 1007 || [[Stinger]] || Legendary || Attack || 3 || '''Shock''' 3 random invaders. Strike all '''Shocked''' entities and purge this card. ||
+|-
+| [[Starfall]] || [[File:CardStarfall.png|100px|frameless|Starfall Card Image]] || 1010 || [[Stinger]] || Legendary || Attack || 2 || Create 3 '''[[Shuriken|Shurikens]]''' and spray them in any direction. Purge this card. ||
+|-
+| [[Spirit Throw]] || [[File:CardSpiritThrow.png|100px|frameless|Spirit Throw Card Image]] || 1019 || [[Stinger]] || Legendary || Attack || 1 || '''Throw''' ALL '''Pickups''' in a cardinal direction. ||
+|-
+| [[Tsunami]] || [[File:CardTsunami.png|100px|frameless|Tsunami Card Image]] || 1034 || [[Stinger]] || Legendary || Tactic || 2 || Shuffle your discard pile into your draw pile. Draw ALL '''Flow''' cards and purge this card. ||
+|-
+| [[Rolling Thunder]] || [[File:CardRollingThunder.png|100px|frameless|Rolling Thunder Card Image]] || 1036 || [[Stinger]] || Legendary || Move || 2 || '''Flow'''. Move 1 to 4 tiles in a cardinal direction and '''Shock''' all nearby entities. ||
+|-
+| [[Quick Charge]] || [[File:CardQuickCharge.png|100px|frameless|Quick Charge Card Image]] || 1038 || [[Stinger]] || Legendary || Tactic || 0 || Convert 1 '''Battery''' into +1 '''Max Power'''. ||
+|-
+| [[Frenzy]] || [[File:CardFrenzy.png|100px|frameless|Frenzy Card Image]] || 1048 || [[Stinger]] || Legendary || Tactic || 2 || Cards with '''[[:Category:Jab cards|Jab]]''' in their title are free and draw 1 card the next time they are played. Purge this card. || Also affects cards with the [[Jab (Component)|Jab component]].
+|-
+| [[Photon Sword]] || [[File:CardPhotonSword.png|100px|frameless|Photon Sword Card Image]] || 1049 || [[Stinger]] || Legendary || Attack || 0 || Strike adjacent invaders. Spends up to 3 '''Battery''' to increase its radius by 1 each. ||
+|-
+| [[Coral Clones]] || [[File:CardCoralClones.png|100px|frameless|Coral Clones Card Image]] || 1051 || [[Stinger]] || Legendary || Tactic || 0 || Spawn 2 '''[[Coral (Item)|Corals]]''' up to 4 tiles away. Purge this card. ||
+|-
+| [[X-Slash]] || [[File:CardXSlash.png|100px|frameless|X-Slash Card Image]] || 1102 || [[Stinger]] || Legendary || Attack/Move || 4 || Move to any tile and strike all tiles diagonal to you. Reduce the cost by 1 for each card played this turn. ||
+|-
+| [[Shuriken]] || [[File:CardShuriken.png|100px|frameless|Shuriken Card Image]] || 1003 || [[Stinger]] || Created || Attack || 1 || '''Flow'''. '''Throw''' this card in a cardinal direction. ||
+|-
+| [[Charge]] || [[File:CardCharge.png|100px|frameless|Charge Card Image]] || 1063 || [[Stinger]] || Created || Junk || 0 || Gain 1 '''Battery''' and purge this card. ||
+|-
+| [[Bolt]] || [[File:CardBolt.png|100px|frameless|Bolt Card Image]] || 1039 || [[Stinger]] ([[Shun]]) || Common || Move || 1 || Move to any tile in your row or column. Strike all '''Shocked''' invaders you pass through. ||
+|-
+| [[Power Nap]] || [[File:CardPowerNap.png|100px|frameless|Power Nap Card Image]] || 1097 || [[Stinger]] ([[Shun]]) || Common || Tactic || 0 || Convert all of your '''Power''' into '''Battery'''. Draw 2 additional cards next turn. ||
+|-
+| [[Sting]] || [[File:CardSting.png|100px|frameless|Sting Card Image]] || 1015 || [[Stinger]] ([[Shun]]) || Rare || Attack || 1 || '''Shock''' entities 3 tiles in ANY direction. '''Shocked''' entities are struck instead. ||
+|-
+| [[Static Wave]] || [[File:CardStaticWave.png|100px|frameless|Static Wave Card Image]] || 1096 || [[Stinger]] ([[Shun]]) || Rare || Tactic || 1 || '''Flow'''. Push all '''Shocked''' invaders 2 tiles left or right. ||
+|-
+| [[Electrokinesis]] || [[File:CardElectrokinesis.png|100px|frameless|Electrokinesis Card Image]] || 1098 || [[Stinger]] ([[Shun]]) || Legendary || Move/Attack || 1 || Move an entity to any tile. If it was '''Shocked''', it strikes itself and all adjacent tiles. ||
+|-
+| [[Feint Jab]] || [[File:CardFeintJab.png|100px|frameless|Feint Jab Card Image]] || 1061 || [[Stinger]] ([[Hali]]) || Starter || Attack || 1 || '''Flow'''. Push an adjacent entity 1 tile away. ||
+|-
+| [[Reef Assault]] || [[File:CardReefAssault.png|100px|frameless|Reef Assault Card Image]] || 1085 || [[Stinger]] ([[Hali]]) || Starter || Attack || 1 || '''Throw''' this card in any cardinal direction. '''Throw''' a '''[[Jam]]''' from each '''[[Coral (Item)|Coral]]''' in that direction. ||
+|-
+| [[X-Spike]] || [[File:CardXSpike.png|100px|frameless|X-Spike Card Image]] || 1094 || [[Stinger]] ([[Hali]]) || Common || Attack || 1 || Strike a '''[[Coral (Item)|Coral]]''' and ALL tiles diagonal to it. ||
+|-
+| [[Swell]] || [[File:CardSwell.png|100px|frameless|Swell Card Image]] || 1095 || [[Stinger]] ([[Hali]]) || Common || Tactic || 0 || Give a '''Move''' card in your hand +2 '''Repeat'''. ||
+|-
+| [[Bioshroud]] || [[File:CardBioshroud.png|100px|frameless|Bioshroud Card Image]] || 1086 || [[Stinger]] ([[Hali]]) || Rare || Tactic || 0 || Gain a '''Shield'''. Spend 1 '''Battery''' to give a '''Shield''' to each '''[[Coral (Item)|Coral]]'''. ||
+|-
+| [[Flourish]] || [[File:CardFlourish.png|100px|frameless|Flourish Card Image]] || 1087 || [[Stinger]] ([[Hali]]) || Rare || Tactic || 1 || Spawn a '''[[Coral (Item)|Coral]]''' on any tile. Destroy all '''Pickups''' and spawn a '''[[Coral (Item)|Coral]]''' on each of those tiles. ||
+|-
+| [[Mega Coral (Card)|Mega Coral]] || [[File:CardMegaCoral.png|100px|frameless|Mega Coral Card Image]] || 1089 || [[Stinger]] ([[Hali]]) || Legendary || Tactic || 1 || Spawn a '''[[Mega Coral (Item)|Mega-Coral]]''' up to 3 tiles away and purge this card. It starts '''Shielded''' and can strike with +1 range. || The Mega-Coral is affected by any cards that target corals.
+|-
+| [[Coral (Card)|Coral]] || [[File:CardCoral.png|100px|frameless|Coral Card Image]] || 1084 || [[Stinger]] ([[Hali]]) || Created || Tactic || 0 || Spawn a '''[[Coral (Item)|Coral]]''' up to 3 tiles away. Purge when played and at the end of your turn. ||
+|-
+| [[Hook Jab]] || [[File:CardHookJab.png|100px|frameless|Hook Jab Card Image]] || 1066 || [[Stinger]] ([[Kaia]]) || Starter || Attack || 1 || Pull an entity in a cardinal direction to the adjacent tile. If already adjacent, strike it instead. ||
+|-
+| [[Bury]] || [[File:CardBury.png|100px|frameless|Bury Card Image]] || 1082 || [[Stinger]] ([[Kaia]]) || Starter || Tactic || 1 || '''Flow'''. Drop the top card of you draw pile on any tile and increase its '''Rarity'''. || Card rarity goes Common -> Rare -> Legendary. Cards with a different rarity (shown with a white bar) become Common.
+|-
+| [[Footloose]] || [[File:CardFootloose.png|100px|frameless|Footloose Card Image]] || 1091 || [[Stinger]] ([[Kaia]]) || Common || Move || 1 || Move to any tile. If a '''[[Booby Traps|Booby Trap]]''' was on that tile, increase its '''Rarity''' and trigger it. || Card rarity goes Common -> Rare -> Legendary. Cards with a different rarity (shown with a white bar) become Common.
+|-
+| [[Puncture]] || [[File:CardPuncture.png|100px|frameless|Puncture Card Image]] || 1093 || [[Stinger]] ([[Kaia]]) || Common || Attack || 1 || Strike the tile exactly 2 tiles above you. Then, create a '''[[Charge]]''' on that tile if possible. ||
+|-
+| [[Pouch]] || [[File:CardPouch.png|100px|frameless|Pouch Card Image]] || 1069 || [[Stinger]] ([[Kaia]]) || Rare || Tactic || 1 || Create 2 '''[[Caltrop|Caltrops]]''' in your hand. Purge this card. ||
+|-
+| [[Caltrop]] || [[File:CardCaltrop.png|100px|frameless|Caltrop Card Image]] || 1070 || [[Stinger]] ([[Kaia]]) || Rare || Tactic || 0 || Drop this card as a '''Pickup''' up to 3 tiles away. When destroyed, '''[[Booby Traps|Booby Trap]]''' triggers twice. ||
+|-
+| [[Thundersquall]] || [[File:CardThundersquall.png|100px|frameless|Thundersquall Card Image]] || 1092 || [[Stinger]] ([[Kaia]]) || Rare || Attack || 2 || '''Shock''' adjacent invaders, or strike them if they were already '''Shocked'''. Range increased by 1 per '''LEGENDARY''' card you own. ||
+|-
+| [[Plunder!]] || [[File:CardPlunder.png|100px|frameless|Plunder! Card Image]] || 1073 || [[Stinger]] ([[Kaia]]) || Legendary || Attack/Tactic || 2 || Increase the rarity of all '''[[Booby Traps]]''', then trigger and draw them. ||
+|-
+| [[Coin]] || [[File:CardCoin.png|100px|frameless|Coin Card Image]] || 1079 || [[Stinger]] ([[Kaia]]) || Legendary || Junk || 0 || Purge this card. When purged, draw 1 card. ||
+|-
+| [[Diamond]] || [[File:CardDiamond.png|100px|frameless|Diamond Card Image]] || 1080 || [[Stinger]] ([[Kaia]]) || Legendary || Junk || 0 || Purge this card. When purged, you gain 3000 stars. ||
+|-
+| [[Ruby]] || [[File:CardRuby.png|100px|frameless|Ruby Card Image]] || 1090 || [[Stinger]] ([[Kaia]]) || Legendary || Junk || 0 || Purge this card. When purged, the next card you play gets +1 '''Repeat'''. ||
+|-
+| [[Wander]] || [[File:CardWander.png|100px|frameless|Wander Card Image]] || 2001 || [[Keeper]] || Starter || Move || 1 || Move 1 to 3 tiles, or haunt another '''Summon'''. ||
+|-
+| [[Energize]] || [[File:CardEnergize.png|100px|frameless|Energize Card Image]] || 2003 || [[Keeper]] || Common || Tactic || 1 || Choose any '''Summon'''. Haunt it, recharge it, and give it a '''Shield''' if possible. ||
+|-
+| [[Reanimate]] || [[File:CardReanimate.png|100px|frameless|Reanimate Card Image]] || 2004 || [[Keeper]] || Common || Tactic || 1 || Sacrifice and respawn any '''Summon'''. Draw 1 card. ||
+|-
+| [[Empower]] || [[File:CardEmpower.png|100px|frameless|Empower Card Image]] || 2005 || [[Keeper]] || Common || Tactic || 0 || Sacrifice any '''Summon'''. The next card you play gets +1 '''Repeat'''. ||
+|-
+| [[Portal]] || [[File:CardPortal.png|100px|frameless|Portal Card Image]] || 2009 || [[Keeper]] || Common || Move || 1 || Draw 2 cards. If you are haunting a '''Summon''', recharge it and move to a random tile. ||
+|-
+| [[Eureka]] || [[File:CardEureka.png|100px|frameless|Eureka Card Image]] || 2015 || [[Keeper]] || Common || Tactic || 1 || Create a random '''Spell''' in an empty slot, or draw 1 card. ||
+|-
+| [[Translocate]] || [[File:CardTranslocate.png|100px|frameless|Translocate Card Image]] || 2016 || [[Keeper]] || Common || Move || 1 || Discard a card in your hand and draw 1 card. You may move to any tile. ||
+|-
+| [[Quick Cast]] || [[File:CardQuickCast.png|100px|frameless|Quick Cast Card Image]] || 2019 || [[Keeper]] || Common || Tactic || 0 || Set the cooldown of the topmost '''Spell''' to 0. Purge this card. || Targets the topmost non-broken spell.
+|-
+| [[Advance]] || [[File:CardAdvance.png|100px|frameless|Advance Card Image]] || 2023 || [[Keeper]] || Common || Move || 1 || Move any entity up to 2 tiles. If it was a '''Summon''', recharge it. ||
+|-
+| [[Shrivel]] || [[File:CardShrivel.png|100px|frameless|Shrivel Card Image]] || 2028 || [[Keeper]] || Common || Attack || 1 || Choose any entity. Strike the tiles to its left and right and give it a '''Shield''' if possible. ||
+|-
+| [[Nether Lash]] || [[File:CardNetherLash.png|100px|frameless|Nether Lash Card Image]] || 2031 || [[Keeper]] || Common || Attack || 2 || Choose any two entities. Strike all tiles in a line between them. ||
+|-
+| [[Whisper]] || [[File:CardWhisper.png|100px|frameless|Whisper Card Image]] || 2008 || [[Keeper]] || Rare || Tactic || 1 || Haunt a non-Boss invader adjacent to you. It is considered a '''Summon''' while haunted. ||
+|-
+| [[Birdy (Card)|Birdy]] || [[File:CardBirdy.png|100px|frameless|Birdy Card Image]] || 2010 || [[Keeper]] || Rare || Tactic || 1 || Spawn a '''[[Birdy (Item)|Birdy]]''' in the bottom 3 rows. Purge this card. ||
+|-
+| [[Alchemize]] || [[File:CardAlchemize.png|100px|frameless|Alchemize Card Image]] || 2013 || [[Keeper]] || Rare || Tactic || 0 || Purge a card in your hand. Reduce the cooldown of each '''Spell''' by 1. ||
+|-
+| [[Sacred Gem]] || [[File:CardSacredGem.png|100px|frameless|Sacred Gem Card Image]] || 2017 || [[Keeper]] || Rare || Junk/Tactic || 1 || Purge this card. When this card leaves your hand during your turn, spawn a '''[[Totem]]''' on a random tile. ||
+|-
+| [[Will-o'-Wisp (Card)|Will-o'-Wisp]] || [[File:CardWillOWisp.png|100px|frameless|Will-o'-Wisp Card Image]] || 2018 || [[Keeper]] || Rare || Tactic || 2 || Spawn a '''[[Will-o'-Wisp (Item)|Will-o'-Wisp]]''' on any tile. ||
+|-
+| [[Psychic Beam]] || [[File:CardPsychicBeam.png|100px|frameless|Psychic Beam Card Image]] || 2020 || [[Keeper]] || Rare || Attack || 1 || Sacrifice each '''Summon'''. They each fire a beam upwards which strikes 3 tiles. ||
+|-
+| [[Jinx]] || [[File:CardJinx.png|100px|frameless|Jinx Card Image]] || 2021 || [[Keeper]] || Rare || Tactic || 1 || Push an entity 1 tile up or down. Returns to your hand from your discard whenever you sacrifice. ||
+|-
+| [[Spook]] || [[File:CardSpook.png|100px|frameless|Spook Card Image]] || 2022 || [[Keeper]] || Rare || Tactic || 1 || Haunt ANY '''Item''' and push all adjacent tiles away. It is considered a '''Summon''' while haunted. ||
+|-
+| [[Scry]] || [[File:CardScry.png|100px|frameless|Scry Card Image]] || 2026 || [[Keeper]] || Rare || Tactic || 1 || Discard adjacent cards and draw that many. Cards drawn are free until played this turn. ||
+|-
+| [[Spirit Storm]] || [[File:CardSpiritStorm.png|100px|frameless|Spirit Storm Card Image]] || 2027 || [[Keeper]] || Rare || Attack || 1 || Fire a beam up to 2 tiles away. Gets +1 range for each entity sacrificed this encounter ||
+|-
+| [[Polymorph]] || [[File:CardPolymorph.png|100px|frameless|Polymorph Card Image]] || 2029 || [[Keeper]] || Rare || Tactic || 1 || Transform a non-Boss entity into a random entity. || Can turn an entity into almost any other entity in the game, with some exceptions (mainly boss-related entities are excluded).
+|-
+| [[Mega Blast]] || [[File:CardMegaBlast.png|100px|frameless|Mega Blast Card Image]] || 2032 || [[Keeper]] || Rare || Attack || 2 || Sacrifice a '''Summon'''. It detonates, striking all tiles up to 2 tiles away. ||
+|-
+| [[Deadly Needle]] || [[File:CardDeadlyNeedle.png|100px|frameless|Deadly Needle Card Image]] || 2048 || [[Keeper]] || Rare || Attack || 0 || Strike an '''Item''' and all tiles in its row. ||
+|-
+| [[Witch Hammer]] || [[File:CardWitchHammer.png|100px|frameless|Witch Hammer Card Image]] || 2050 || [[Keeper]] || Rare || Attack || 4 || Strike an entity and all adjacent tiles. Reduce cost by 1 for each '''Summon''' on the grid. ||
+|-
+| [[Awaken]] || [[File:CardAwaken.png|100px|frameless|Awaken Card Image]] || 2006 || [[Keeper]] || Legendary || Tactic || 1 || Recharge each '''Summon''', or draw 1 card. ||
+|-
+| [[Levitate]] || [[File:CardLevitate.png|100px|frameless|Levitate Card Image]] || 2007 || [[Keeper]] || Legendary || Attack || 1 || Each '''Summon''' gains '''Immune''' this turn. Push them 2 tiles upward. ||
+|-
+| [[Slicer (Card)|Slicer]] || [[File:CardSlicer.png|100px|frameless|Slicer Card Image]] || 2011 || [[Keeper]] || Legendary || Tactic || 1 || Spawn a '''[[Slicer (Item)|Slicer]]''' anywhere in the bottom 3 rows. Purge this card. ||
+|-
+| [[Mana Gem]] || [[File:CardManaGem.png|100px|frameless|Mana Gem Card Image]] || 2012 || [[Keeper]] || Legendary || Junk/Tactic || 0 || Purge this card. When this card leaves your hand during your turn, gain +2 '''Mana'''. ||
+|-
+| [[Oru (Card)|Oru]] || [[File:CardOru.png|100px|frameless|Oru Card Image]] || 2024 || [[Keeper]] || Legendary || Tactic || 0 || Spawn an uncharged '''[[Oru (Item)|Oru]]''' on any tile. Purge this card. ||
+|-
+| [[Dragon (Card)|Dragon]] || [[File:CardDragon.png|100px|frameless|Dragon Card Image]] || 2025 || [[Keeper]] || Legendary || Tactic || 2 || Sacrifice a '''Summon''' and spawn '''[[Dragon (Item)|Dragon]]''' in its place. ||
+|-
+| [[Raise Army]] || [[File:CardRaiseArmy.png|100px|frameless|Raise Army Card Image]] || 2030 || [[Keeper]] || Legendary || Tactic || 2 || Sacrifice the haunted '''Summon'''. Summon copies of it on random tiles in your row until the '''Summon''' limit. ||
+|-
+| [[Burn Book]] || [[File:CardBurnBook.png|100px|frameless|Burn Book Card Image]] || 2039 || [[Keeper]] || Legendary || Tactic || 1 || Reduce the cooldown of each '''Spell''' by 2. The next '''Spell''' you cast is destroyed. || A destroyed spell effectively no longer exists (it can't be cast, its cooldown can't be reduced, and it's ignored by cards), but it still takes up its slot.
+|-
+| [[Death's Touch]] || [[File:CardDeathsTouch.png|100px|frameless|Death's Touch Card Image]] || 2049 || [[Keeper]] || Legendary || Attack || 3 || Strike 3 random invaders. Draw this card from your draw pile and make it free when you sacrifice. ||
+|-
+| [[Bubble]] || [[File:CardBubble.png|100px|frameless|Bubble Card Image]] || 2040 || [[Keeper]] || Created || Tactic/Junk || 0 || Give a '''Shield''' to any entity. Purge this card. ||
+|-
+| [[Blast]] || [[File:CardBlast.png|100px|frameless|Blast Card Image]] || 2000 || [[Keeper]] ([[Iris]]) || Starter || Attack || 1 || Sacrifice a '''Summon''' and strike all adjacent tiles. ||
+|-
+| [[Puppet (Card)|Puppet]] || [[File:CardPuppet.png|100px|frameless|Puppet Card Image]] || 2002 || [[Keeper]] ([[Iris]]) || Starter || Tactic || 1 || Spawn a '''[[Puppet (Item)|Puppet]]''' anywhere in the bottom 3 rows. ||
+|-
+| [[Bewitch]] || [[File:CardBewitch.png|100px|frameless|Bewitch Card Image]] || 2055 || [[Keeper]] ([[Iris]]) || Common || Tactic || 2 || Haunt a non-Boss invader without a '''Shield'''. It is considered a '''Summon''' while haunted. ||
+|-
+| [[Consecrate]] || [[File:CardConsecrate.png|100px|frameless|Consecrate Card Image]] || 2070 || [[Keeper]] ([[Iris]]) || Common || Tactic || 0 || Destroy the topmost '''Spell'''. Draw +2 cards and +2 '''Mana''' next turn. || A destroyed spell effectively no longer exists (it can't be cast, its cooldown can't be reduced, and it's ignored by cards), but it still takes up its slot.
+|-
+| [[Extract]] || [[File:CardExtract.png|100px|frameless|Extract Card Image]] || 2068 || [[Keeper]] ([[Iris]]) || Rare || Tactic || 1 || The next card you play this turn is free. If it was purged, create a copy of it in your discard pile. ||
+|-
+| [[Whoops!]] || [[File:CardWhoops.png|100px|frameless|Whoops! Card Image]] || 2069 || [[Keeper]] ([[Iris]]) || Rare || Tactic || 2 || Spawn a random '''Summon''' on any tile. Reduce cost by 1 this turn when you cast a '''Spell'''. ||
+|-
+| [[Maker's Fury]] || [[File:CardMakersFury.png|100px|frameless|Maker's Fury Card Image]] || 2056 || [[Keeper]] ([[Iris]]) || Legendary || Attack || 2 || Launch a '''Fireball''' upwards from the bottom of any column. This gets +1 '''Repeat''' for each '''Spell''' destroyed. ||
+|-
+| [[Chant]] || [[File:CardChant.png|100px|frameless|Chant Card Image]] || 2066 || [[Keeper]] ([[Iris]]) || Created || Tactic || 0 || Reduce the cooldown of each '''Spell''' by 1 and draw 1 card. Purge this card. ||
+|-
+| [[Poof!]] || [[File:CardPoof.png|100px|frameless|Poof! Card Image]] || 2067 || [[Keeper]] ([[Iris]]) || Created || Tactic/Junk || 0 || Gain 1 '''Mana''' and draw 1 card. Purge this card. ||
+|-
+| [[Sol & Luna]] || [[File:CardSolLuna.png|100px|frameless|Sol & Luna Card Image]] || 2041 || [[Keeper]] ([[Xenn]]) || Starter || Tactic || 1 || Either spawn '''[[Sol]]''' on the left side of the bottom 3 rows. Or spawn '''[[Luna]]''' on the right side of the bottom 3 rows. ||
+|-
+| [[Implode]] || [[File:CardImplode.png|100px|frameless|Implode Card Image]] || 2047 || [[Keeper]] ([[Xenn]]) || Starter || Attack || 1 || Sacrifice a '''Summon''' and fire a '''Fireball''' upwards from its tile. ||
+|-
+| [[Align]] || [[File:CardAlign.png|100px|frameless|Align Card Image]] || 2051 || [[Keeper]] ([[Xenn]]) || Starter || Move/Attack || 1 || Move 1 to 2 tiles, or haunt another '''Summon'''. Then, strike the tile above the target. ||
+|-
+| [[Syzygy]] || [[File:CardSyzygy.png|100px|frameless|Syzygy Card Image]] || 2057 || [[Keeper]] ([[Xenn]]) || Common || Attack || 2 || Choose a '''Summon''' and strike all other tiles in its column. This counts as both '''Sun''' and '''Moon'''. ||
+|-
+| [[Fission]] || [[File:CardFission.png|100px|frameless|Fission Card Image]] || 2058 || [[Keeper]] ([[Xenn]]) || Common || Tactic || 1 || Purge a card in your hand. Shuffle 1 '''Sun''' copy and 1 '''Moon''' copy into your draw pile and purge this card. ||
+|-
+| [[Sunspot (Card)|Sunspot]] || [[File:CardSunspot.png|100px|frameless|Sunspot Card Image]] || 2045 || [[Keeper]] ([[Xenn]]) || Rare || Tactic || 1 || Spawn '''[[Sunspot (Item)|Sunspot]]''' on any tile on the left of the grid. ||
+|-
+| [[Lunar Probe (Card)|Lunar Probe]] || [[File:CardLunarProbe.png|100px|frameless|Lunar Probe Card Image]] || 2045 || [[Keeper]] ([[Xenn]]) || Rare || Tactic || 1 || Spawn '''[[Lunar Probe (Item)|Lunar Probe]]''' on any tile on the right of the grid. ||
+|-
+| [[Cosmic Wish]] || [[File:CardCosmicWish.png|100px|frameless|Cosmic Wish Card Image]] || 2044 || [[Keeper]] ([[Xenn]]) || Legendary || Tactic || 1 || Give all '''Sun''' cards in your hand +1 '''Repeat'''. Make all '''Moon''' cards in your hand free this turn. ||
+|-
+| [[Turret (Card)|Turret]] || [[File:CardTurret.png|100px|frameless|Turret Card Image]] || 2033 || [[Keeper]] ([[Garu]]) || Starter || Tactic || 1 || Spawn a '''[[Turret (Item)|Turret]]''' on any tile in the bottom 3 rows. Increase '''Mana''' cost by 1 for each '''[[Turret (Item)|Turret]]''' on the grid. ||
+|-
+| [[Step]] || [[File:CardStep.png|100px|frameless|Step Card Image]] || 2034 || [[Keeper]] ([[Garu]]) || Starter || Move || 1 || Move 1 to 2 tiles, or haunt another '''Summon'''. ||
+|-
+| [[Blast Fire!]] || [[File:CardBlastFire.png|100px|frameless|Blast Fire! Card Image]] || 2035 || [[Keeper]] ([[Garu]]) || Starter || Attack || 1 || Sacrifice a '''Summon''' and fire a piercing '''Bullet''' upwards from it. ||
+|-
+| [[Novamorph]] || [[File:CardNovamorph.png|100px|frameless|Novamorph Card Image]] || 2059 || [[Keeper]] ([[Garu]]) || Common || Tactic || 2 || Transform a non-Boss invader into a '''[[Nova Bomb (Item)|Bomb]]'''. ||
+|-
+| [[Charge Fire!]] || [[File:CardChargeFire.png|100px|frameless|Charge Fire! Card Image]] || 2060 || [[Keeper]] ([[Garu]]) || Common || Attack || 0 || All charged '''Summon''' spend their charge to fire a piercing '''Bullet''' upwards. Does not discard if an invader was destroyed. ||
+|-
+| [[Toy Bomb (Card)|Toy Bomb]] || [[File:CardToyBomb.png|100px|frameless|Toy Bomb Card Image]] || 2053 || [[Keeper]] ([[Garu]]) || Rare || Tactic || 2 || Spawn a '''[[Toy Bomb (Item)|Toy Bomb]]''' on any tile. Radius increases by 1 each time you activate it. ||
+|-
+| [[Witch Fire!]] || [[File:CardWitchFire.png|100px|frameless|Witch Fire! Card Image]] || 2054 || [[Keeper]] ([[Garu]]) || Rare || Attack || 1 || Fire a '''Bullet''' upward. Chains to nearby invaders equal to the largest cooldown on a '''Spell'''. ||
+|-
+| [[Toy Gunner (Card)|Toy Gunner]] || [[File:CardToyGunner.png|100px|frameless|Toy Gunner Card Image]] || 2061 || [[Keeper]] ([[Garu]]) || Legendary || Tactic || 3 || Spawn '''[[Toy Gunner (Item)|Toy Gunner]]''' in the bottom 3 rows. Purge this card. ||
+|-
+| [[Polyp (Card)|Polyp]] || [[File:CardPolyp.png|100px|frameless|Polyp Card Image]] || 2036 || [[Keeper]] ([[Sura]]) || Starter || Tactic || 1 || Spawn a '''[[Polyp (Item)|Polyp]]''' in the bottom 3 rows. Increase '''Mana''' cost by 1 for each '''[[Polyp (Item)|Polyp]]''' on the grid. ||
+|-
+| [[Psychic Jab]] || [[File:CardPsychicJab.png|100px|frameless|Psychic Jab Card Image]] || 2037 || [[Keeper]] ([[Sura]]) || Starter || Attack || 1 || '''Flow'''. Each '''Summon''' strikes a random adjacent invader. ||
+|-
+| [[Jellyfish (Card)|Jellyfish]] || [[File:CardJellyfish.png|100px|frameless|Jellyfish Card Image]] || 2052 || [[Keeper]] ([[Sura]]) || Common || Tactic || 2 || Spawn a '''[[Jellyfish (Item)|Jellyfish]]''' on any tile. Purge this card. ||
+|-
+| [[Hydrate]] || [[File:CardHydrate.png|100px|frameless|Hydrate Card Image]] || 2064 || [[Keeper]] ([[Sura]]) || Common || Tactic || 1 || Reduce the cooldown of each '''Spell''' by 1. This gets +1 '''Repeat''' for each '''Flow''' card played this turn. ||
+|-
+| [[Overload]] || [[File:CardOverload.png|100px|frameless|Overload Card Image]] || 2063 || [[Keeper]] ([[Sura]]) || Rare || Tactic || 2 || '''Flow'''. Recharge and '''Shock''' each '''Summon'''. ||
+|-
+| [[Jab'racadabra]] || [[File:CardJabracadabra.png|100px|frameless|Jab'racadabra Card Image]] || 2065 || [[Keeper]] ([[Sura]]) || Rare || Attack || 1 || Strike an adjacent entity or draw 1 card. If an '''Item''' was destroyed, transform a random non-boss invader into it. ||
+|-
+| [[Toy Stinger (Card)|Toy Stinger]] || [[File:CardToyStinger.png|100px|frameless|Toy Stinger Card Image]] || 2062 || [[Keeper]] ([[Sura]]) || Legendary || Tactic || 3 || Spawn '''[[Toy Stinger (Item)|Toy Stinger]]''' in the bottom 3 rows. Purge this card. ||
+|-
+| [[Dodge]] || [[File:CardDodge.png|100px|frameless|Dodge Card Image]] || 39 || Neutral || Common || Move || 0 || Move to any tile diagonally. Gain '''Immunity''' this turn. ||
+|-
+| [[Swap]] || [[File:CardSwap.png|100px|frameless|Swap Card Image]] || 20 || Neutral || Common || Tactic || 1 || Swap 2 entities. ||
+|-
+| [[Refresh]] || [[File:CardRefresh.png|100px|frameless|Refresh Card Image]] || 1023 || Neutral || Rare || Tactic || 0 || Shuffle your hand and discard into your deck and draw 3 cards. Purge this card. ||
+|-
+| [[Quickdraw]] || [[File:CardQuickdraw.png|100px|frameless|Quickdraw Card Image]] || 4 || Neutral || Rare || Tactic || 1 || Reshuffle your discard into your draw pile. Draw a '''Tactic''' and make it free when played this turn. ||
+|-
+| [[Returnal]] || [[File:CardReturnal.png|100px|frameless|Returnal Card Image]] || 21 || Neutral || Rare || Move || 1 || Move to any tile in the center column. Draw the top card of your discard. ||
+|-
+| [[Copycat]] || [[File:CardCopycat.png|100px|frameless|Copycat Card Image]] || 62 || Neutral || Legendary || Tactic || 0 || Create a copy of a card. Purge this card. ||
+|-
+| [[Jam]] || [[File:CardJam.png|100px|frameless|Jam Card Image]] || 7 || Neutral || Junk || Junk || 1 || Purge this card. ||
+|-
+| [[Shimmer]] || [[File:CardShimmer.png|100px|frameless|Shimmer Card Image]] || 11 || Neutral || Junk || Junk || 1 || Purge this card. If unplayed, give a '''Shield''' to a random invader. ||
+|-
+| [[Corruption]] || [[File:CardCorruption.png|100px|frameless|Corruption Card Image]] || 48 || Neutral || Junk || Junk || 1 || Purge this card. If unplayed, you get +1 non-fatal '''Doom''' and purge this card. ||
+|-
+| [[Breach]] || [[File:CardBreach.png|100px|frameless|Breach Card Image]] || 49 || Neutral || Junk || Junk || 1 || Purge this card. If unplayed, push your mech in a random direction. ||
+|-
+| [[Mangled]] || [[File:CardMangled.png|100px|frameless|Mangled Card Image]] || 50 || Neutral || Junk || Junk || 1 || Purge this card. If unplayed, strike your mech. ||
+|-
+| [[Hallucination]] || [[File:CardHallucination.png|100px|frameless|Hallucination Card Image]] || 51 || Neutral || Junk || Junk || 1 || Purge this card. If unplayed, draw 1 fewer card next turn. ||
+|-
+| [[Pusher]] || [[File:CardPusher.png|100px|frameless|Pusher Card Image]] || 5 || Neutral ([[Tempest]]) || Common || Tactic || 1 || Push any entity left or right. ||
+|-
+| [[Galeforce]] || [[File:CardGaleforce.png|100px|frameless|Galeforce Card Image]] || 106 || Neutral ([[Tempest]]) || Common || Move || 1 || Move 1 to 3 tiles and push all adjacent tiles away. ||
+|-
+| [[Concussive Blast]] || [[File:CardConcussiveBlast.png|100px|frameless|Concussive Blast Card Image]] || 18 || Neutral ([[Tempest]]) || Common || Tactic || 2 || Choose an empty tile. Push all adjacent tiles. ||
+|-
+| [[Tractor Beam]] || [[File:CardTractorBeam.png|100px|frameless|Tractor Beam Card Image]] || 59 || Neutral ([[Tempest]]) || Rare || Tactic/Move || 1 || Push all entities in your column left or right. ||
+|-
+| [[Tornado]] || [[File:CardTornado.png|100px|frameless|Tornado Card Image]] || 68 || Neutral ([[Tempest]]) || Legendary || Tactic || 2 || Push ALL entities in a random direction. Purge this card. ||
+|-
+| [[Prime]] || [[File:CardPrime.png|100px|frameless|Prime Card Image]] || 3 || Neutral ([[Repeater]]) || Common || Tactic || 1 || Push your mech down. Your next card played gets +1 '''Repeat'''. ||
+|-
+| [[Reverb]] || [[File:CardReverb.png|100px|frameless|Reverb Card Image]] || 141 || Neutral ([[Repeater]]) || Rare || Tactic || 0 || Discard a card in your hand and purge this card. Give it +1 '''Repeat''' for the rest of the encounter. ||
+|-
+| [[Reload]] || [[File:CardReload.png|100px|frameless|Reload Card Image]] || 140 || Neutral ([[Repeater]]) || Rare || Tactic || 1 || Draw the top 2 '''Attack''' cards in your draw pile. They get +1 '''Repeat''' when played this turn. ||
+|-
+| [[Reposition]] || [[File:CardReposition.png|100px|frameless|Reposition Card Image]] || 1053 || Neutral ([[Repeater]]) || Rare || Tactic/Move || 1 || Pull any entity 1 tile in a cardinal direction. This card has +2 '''Repeat'''. ||
+|-
+| [[Decimate]] || [[File:CardDecimate.png|100px|frameless|Decimate Card Image]] || 127 || Neutral ([[Repeater]]) || Legendary || Tactic || 0 || Spawn an '''[[Auto Bomb]]''' on a random tile. Gets +1 '''Repeat''' and increase its cost by 1 each time played. ||
+|-
+| [[Flight]] || [[File:CardFlight.png|100px|frameless|Flight Card Image]] || 16 || Neutral ([[Spectral]]) || Common || Move || 0 || Purge a card in your hand. Then, you may move to any tile. ||
+|-
+| [[Exhaust]] || [[File:CardExhaust.png|100px|frameless|Exhaust Card Image]] || 22 || Neutral ([[Spectral]]) || Common || Tactic || 1 || Purge a card in your hand. Draw 3 cards. ||
+|-
+| [[Lucky Shot]] || [[File:CardLuckyShot.png|100px|frameless|Lucky Shot Card Image]] || 137 || Neutral ([[Spectral]]) || Common || Tactic || 1 || Create a random '''[[Phantom]] Attack''' card in your hand. It is free when played. ||
+|-
+| [[Hologram]] || [[File:CardHologram.png|100px|frameless|Hologram Card Image]] || 134 || Neutral ([[Spectral]]) || Rare || Tactic || 1 || Create a free '''[[Phantom]]''' copy of the top card in your discard pile in your hand. ||
+|-
+| [[SCR-4P]] || [[File:CardSCR4P.png|100px|frameless|SCR-4P Card Image]] || 71 || Neutral ([[Spectral]]) || Legendary || Junk || 2 || Purge this card. On purge, strike 2 random invaders and create a copy in your discard next turn. ||
+|-
+| [[Respite]] || [[File:CardRespite.png|100px|frameless|Respite Card Image]] || 45 || Neutral ([[Guardian]]) || Common || Move || 0 || Move any entity up to 2 tiles. Give it a '''Shield''' if possible. ||
+|-
+| [[Star Field]] || [[File:CardStarField.png|100px|frameless|Star Field Card Image]] || 31 || Neutral ([[Guardian]]) || Common || Tactic || 1 || Give a '''Shield''' to an entity and push all adjacent tiles. ||
+|-
+| [[Clunker (Card)|Clunker]] || [[File:CardClunker.png|100px|frameless|Clunker Card Image]] || 124 || Neutral ([[Guardian]]) || Common || Tactic || 1 || Spawn '''[[Clunker (Item)|Clunker]]''' up to 4 tiles away and purge this card. It has a regenerating '''Shield''' and draws 1 card when its '''Shield''' breakds. ||
+|-
+| [[Repulsion]] || [[File:CardRepulsion.png|100px|frameless|Repulsion Card Image]] || 44 || Neutral ([[Guardian]]) || Rare || Tactic || 1 || Draw 1 card. Push all '''Shielded''' entities up. ||
+|-
+| [[Shatter]] || [[File:CardShatter.png|100px|frameless|Shatter Card Image]] || 38 || Neutral ([[Guardian]]) || Legendary || Attack || 2 || Strike any entity. If it had a '''Shield''', it detonates and strikes all adjacent entities. ||
+|-
+| [[Augment]] || [[File:CardAugment.png|100px|frameless|Augment Card Image]] || 41 || Neutral ([[Inventor]]) || Common || Tactic || 0 || Upgrade a card with a random '''Component'''. ||
+|-
+| [[Recur]] || [[File:CardRecur.png|100px|frameless|Recur Card Image]] || 138 || Neutral ([[Inventor]]) || Common || Move || 0 || Move 1 to 2 tiles. Draw this card from your draw pile when a card with a '''Component''' is played. ||
+|-
+| [[Expunge]] || [[File:CardExpunge.png|100px|frameless|Expunge Card Image]] || 129 || Neutral ([[Inventor]]) || Rare || Tactic || 1 || The next '''Component'''-less card played gets +2 '''Repeat''' but purges itself. ||
+|-
+| [[Show Off]] || [[File:CardShowOff.png|100px|frameless|Show Off Card Image]] || 143 || Neutral ([[Inventor]]) || Rare || Tactic || 1 || Reshuffle your discard pile, and draw ALL cards with a '''Component'''. Purge this card. ||
+|-
+| [[Transmogrify]] || [[File:CardTransmogrify.png|100px|frameless|Transmogrify Card Image]] || 145 || Neutral ([[Inventor]]) || Legendary || Tactic || 1 || Purge a card in your hand. Create 2 copies with random '''Components''' and purge this card. ||
+|-
+| [[Recycle]] || [[File:CardRecycle.png|100px|frameless|Recycle Card Image]] || 139 || Neutral ([[Salvage]]) || Common || Tactic || 0 || Purge a card in your hand and create a random '''Attack'''. If you purged '''Junk''', the new card is free when played. ||
+|-
+| [[Repair]] || [[File:CardRepair.png|100px|frameless|Repair Card Image]] || 17 || Neutral ([[Salvage]]) || Common || Tactic || 1 || Draw 2 cards. Then, make all '''Junk''' cards in your hand free this turn. ||
+|-
+| [[Bash]] || [[File:CardBash.png|100px|frameless|Bash Card Image]] || 122 || Neutral ([[Salvage]]) || Common || Attack/Move || 1 || Push your mech in a cardinal direction until you collide. Draw 1 card. ||
+|-
+| [[Take Heart]] || [[File:CardTakeHeart.png|100px|frameless|Take Heart Card Image]] || 142 || Neutral ([[Salvage]]) || Rare || Tactic || 1 || Strike your mech 3 times. Then, your next card gets +2 '''Repeat'''. ||
+|-
+| [[Junk Beam]] || [[File:CardJunkBeam.png|100px|frameless|Junk Beam Card Image]] || 135 || Neutral ([[Salvage]]) || Legendary || Attack/Move || 7 || Strike all tiles in your row and column. Reduce the cost by 1 for each time you gained '''Junk''' this encounter. ||
+|-
+| [[Dark Bargain]] || [[File:CardDarkBargain.png|100px|frameless|Dark Bargain Card Image]] || 125 || Neutral ([[Abyssal]]) || Common || Tactic/Junk || 0 || Create 2 '''[[Dark Power]]''' in your discard pile. If unplayed, get +1 non-fatal '''Doom'''. ||
+|-
+| [[Tempt Fate]] || [[File:CardTemptFate.png|100px|frameless|Tempt Fate Card Image]] || 144 || Neutral ([[Abyssal]]) || Common || Tactic || 0 || Shuffle a '''[[Corruption]]''' into your draw pile. Draw 2 cards. ||
+|-
+| [[B.F.G.]] || [[File:CardBFG.png|100px|frameless|B.F.G. Card Image]] || 121 || Neutral ([[Abyssal]]) || Rare || Attack || 1 || Strike tiles in a line up to 2 tiles away. Gets +1 range per '''Doom''' you have. ||
+|-
+| [[Last Resort]] || [[File:CardLastResort.png|100px|frameless|Last Resort Card Image]] || 136 || Neutral ([[Abyssal]]) || Rare || Move || 1 || Move up to 2 tiles. Push invaders channelling '''Doom''' in that direction. ||
+|-
+| [[Devour]] || [[File:CardDevour.png|100px|frameless|Devour Card Image]] || 128 || Neutral ([[Abyssal]]) || Legendary || Attack || 2 || Strike any entity and the adjacent tiles to its left and right. Spawn 2 '''[[Void Rift|Void Rifts]]''' on random nearby tiles. ||
+|-
+| [[Budge]] || [[File:CardBudge.png|100px|frameless|Budge Card Image]] || 148 || Neutral ([[Tectonic]]) || Common || Tactic || 0 || Give your mech or an '''Item''' a '''Shield''' and push them 2 tiles in any direction. ||
+|-
+| [[Airlift]] || [[File:CardAirlift.png|100px|frameless|Airlift Card Image]] || 147 || Neutral ([[Tectonic]]) || Common || Move/Attack || 1 || Move any entity to any tile. If it was an '''Item''', strike tile directly below. ||
+|-
+| [[Boulder Toss]] || [[File:CardBoulderToss.png|100px|frameless|Boulder Toss Card Image]] || 149 || Neutral ([[Tectonic]]) || Common || Attack || 2 || Throw a '''[[Boulder]]''' onto any empty tile. Strike all adjacent tiles. ||
+|-
+| [[Reproduce]] || [[File:CardReproduce.png|100px|frameless|Reproduce Card Image]] || 146 || Neutral ([[Tectonic]]) || Rare || Tactic || 0 || Create a copy of an '''Item''' or '''Pickup''' anywhere on the grid. Purge this card. ||
+|-
+| [[Mudslide]] || [[File:CardMudslide.png|100px|frameless|Mudslide Card Image]] || 150 || Neutral ([[Tectonic]]) || Legendary || Tactic || 0 || Spawn a '''[[Boulder]]''' on any tile. Push all '''Item''' entities 1 tile in any direction. ||
+|-
+| [[Footsies]] || [[File:CardFootsies.png|100px|frameless|Footsies Card Image]] || 153 || Neutral ([[C-C-Combo]]) || Common || Move/Attack || 0 || Move 1 to 3 tiles. If you had 2 or more '''Combo''', strike the tile above you. ||
+|-
+| [[Startup]] || [[File:CardStartup.png|100px|frameless|Startup Card Image]] || 156 || Neutral ([[C-C-Combo]]) || Common || Tactic || 0 || Can only be played when you have no '''Combo'''. Draw 3 cards and +1 '''Combo'''. ||
+|-
+| [[Hyper Beam]] || [[File:CardHyperBeam.png|100px|frameless|Hyper Beam Card Image]] || 154 || Neutral ([[C-C-Combo]]) || Rare || Attack || 0 || Strike all tiles in your column and purge this card. If you had 3 or more '''Combo''', strike all tiles in adjacent columns too. ||
+|-
+| [[Okizeme]] || [[File:CardOkizeme.png|100px|frameless|Okizeme Card Image]] || 155 || Neutral ([[C-C-Combo]]) || Rare || Tactic || 1 || Your '''Combo''' carries over and you draw 2 additional cards next turn. ||
+|-
+| [[Finisher]] || [[File:CardFinisher.png|100px|frameless|Finisher Card Image]] || 152 || Neutral ([[C-C-Combo]]) || Legendary || Attack || 2 || Strike adjacent invaders, with +1 radius per '''Combo'''. Set your '''Combo''' to 0. ||
+|-
+| [[Manifold]] || [[File:CardManifold.png|100px|frameless|Manifold Card Image]] || 159 || Neutral ([[Dimensional]]) || Common || Tactic || 0 || Give a card +1 '''Repeat''' and discard all other cards in your hand. ||
+|-
+| [[Blink]] || [[File:CardBlink.png|100px|frameless|Blink Card Image]] || 158 || Neutral ([[Dimensional]]) || Common || Move || 1 || Move 1 to 2 tiles. When this enters your hand, draw 1 card. ||
+|-
+| [[Distort]] || [[File:CardDistort.png|100px|frameless|Distort Card Image]] || 161 || Neutral ([[Dimensional]]) || Common || Tactic || 1 || Draw 2 cards. If this is the last card in your hand, the cards drawn are free. ||
+|-
+| [[Void Storm]] || [[File:CardVoidStorm.png|100px|frameless|Void Storm Card Image]] || 160 || Neutral ([[Dimensional]]) || Legendary || Attack || 0 || Strike a random invader for each card in your hand. Then, discard your hand. ||
+|-
+| [[Last Impact]] || [[File:CardLastImpact.png|100px|frameless|Last Impact Card Image]] || 157 || Neutral ([[Dimensional]]) || Legendary || Attack || 1 || Strike any tile. If this is the last card in your hand, strike all tiles in its row and column. ||
+|-
+| [[Pocket Sand]] || [[File:CardPocketSand.png|100px|frameless|Pocket Sand Card Image]] || 3001 || Neutral ([[Beach]]) || Common || Attack || 0 || Discard a card in your hand. Strike a random invader and draw 1 card. ||
+|-
+| [[Road Trip]] || [[File:CardRoadTrip.png|100px|frameless|Road Trip Card Image]] || 3000 || Neutral ([[Beach]]) || Common || Move || 1 || Move 1 to 3 tiles away. Return all cards that mention "[[:Category:Random cards|random]]" from your discard pile to your hand. ||
+|-
+| [[Volley!]] || [[File:CardVolley.png|100px|frameless|Volley Card Image]] || 3003 || Neutral ([[Beach]]) || Common || Tactic || 1 || Spawn [[Beach Ball]] on a random nearby tile. If it is already on the grid, strike it instead. || If there are multiple Beach Balls, all of them are stuck.
+|-
+| [[Splash!]] || [[File:CardSplash.png|100px|frameless|Splash Card Image]] || 3004 || Neutral ([[Beach]]) || Rare || Tactic || 1 || Give a random card in your hand +2 '''Repeat'''. ||
+|-
+| [[Daydream]] || [[File:CardDaydream.png|100px|frameless|Daydream Card Image]] || 3002 || Neutral ([[Beach]]) || Legendary || Tactic || 1 || Purge a card in your hand. Create a random upgraded '''[[:Category:Legendary cards|LEGENDARY]]''' card that is free until played. ||
+|-
+| [[Howl]] || [[File:CardHowl.png|100px|frameless|Howl Card Image]] || 4002 || Neutral ([[Full Moon]]) || Common || Tactic || 0 || Pull any invader 1 tile in a cardinal direction. If it becomes isolated, draw 1 card. ||
+|-
+| [[Reap Soul]] || [[File:CardReapSoul.png|100px|frameless|Reap Soul Card Image]] || 4001 || Neutral ([[Full Moon]]) || Common || Attack || 1 || Sacrifice any non-Boss entity. Purge this card. ||
+|-
+| [[Claw]] || [[File:CardClaw.png|100px|frameless|Claw Card Image]] || 4003 || Neutral ([[Full Moon]]) || Rare || Attack || 0 || Strike 3 random isolated invaders. ||
+|-
+| [[Scarecrow (Card)|Scarecrow]] || [[File:CardScarecrow.png|100px|frameless|Scarecrow Card Image]] || 4000 || Neutral ([[Full Moon]]) || Rare || Tactic || 1 || Spawn a '''[[Scarecrow (Item)|Scarecrow]]''' anywhere on the grid and push all adjacent tiles away. Purge this card. ||
+|-
+| [[Feed]] || [[File:CardFeed.png|100px|frameless|Feed Card Image]] || 4004 || Neutral ([[Full Moon]]) || Legendary || Move/Attack || 1 || Move to any tile. Sacrifice all adjacent isolated non-Boss invaders. ||
+|-
+| [[Recess!]] || [[File:CardRecess.png|100px|frameless|Recess Card Image]] || 4007 || Neutral ([[Academy]]) || Common || Move || 0 || Move 1 to 4 tiles away. Draw the top '''[[:Category:Starter cards|STARTER]]''' card in your draw pile. ||
+|-
+| [[Homework]] || [[File:CardHomework.png|100px|frameless|Homework Card Image]] || 4005 || Neutral ([[Academy]]) || Common || Tactic || 1 || Reshuffle your discard pile. Draw the top 3 '''[[:Category:Starter cards|STARTER]]''' cards in your draw pile. ||
+|-
+| [[Calculate]] || [[File:CardCalculate.png|100px|frameless|Calculate Card Image]] || 4006 || Neutral ([[Academy]]) || Common || Tactic || 1 || The next '''[[:Category:Starter cards|STARTER]]''' card you play is free and gets +2 '''Repeat'''. ||
+|-
+| [[Eraser]] || [[File:CardEraser.png|100px|frameless|Eraser Card Image]] || 4008 || Neutral ([[Academy]]) || Rare || Tactic/Attack || 0 || Purge a card. If it was '''[[:Category:Starter cards|STARTER]]''' or '''[[:Category:Junk cards|Junk]]''', strike all other tiles in your column. ||
+|-
+| [[Call Tippy!]] || [[File:CardCallTippy.png|100px|frameless|Call Tippy! Card Image]] || 4009 || Neutral ([[Academy]]) || Legendary || Tactic || 1 || Spawn [[Tippy (Item)|Tippy]] on any tile. Purge this card. ||
+|-
+| [[Warp]] || [[File:CardWarp.png|100px|frameless|Warp Card Image]] || 60 || Neutral || Created || Move || 0 || Move to any tiles and draw 3 cards. Purge this card. ||
+|-
+| [[Gust Up!]] || [[File:CardGustUp.png|100px|frameless|Gust Up! Card Image]] || 131 || Neutral ([[Tempest]]) || Created || Tactic || 0 || Pull any entity 1 tile upward. Purge this card. ||
+|-
+| [[Gust Left!]] || [[File:CardGustLeft.png|100px|frameless|Gust Left! Card Image]] || 132 || Neutral ([[Tempest]]) || Created || Tactic || 0 || Pull any entity 1 tile towards the left. Purge this card. ||
+|-
+| [[Gust Right!]] || [[File:CardGustRight.png|100px|frameless|Gust Right! Card Image]] || 133 || Neutral ([[Tempest]]) || Created || Tactic || 0 || Pull any entity 1 tile towards the right. Purge this card. ||
+|-
+| [[Gust Down!]] || [[File:CardGustDown.png|100px|frameless|Gust Down! Card Image]] || 130 || Neutral ([[Tempest]]) || Created || Tactic || 0 || Pull any entity 1 tile downward. Purge this card. ||
+|-
+| [[Butter]] || [[File:CardButter.png|100px|frameless|Butter Card Image]] || 123 || Neutral ([[Salvage]]) || Junk || Junk/Move || 0 || Move 1 to 2 tiles and purge this card. If unplayed, also purge this card. ||
+|-
+| [[Dark Power]] || [[File:CardDarkPower.png|100px|frameless|Dark Power Card Image]] || 126 || Neutral ([[Abyssal]])|| Created || Tactic || 1 || Give a card in your hand +1 '''Repeat''' and make it free the next time it is played. Purge this card. ||
+|-
+| [[Blank]] || [[File:CardBlank.png|100px|frameless|Blank Card Image]] || 162 || Neutral ([[Dimensional]]) || Created || Junk || 1 || When this card leaves your hand, draw 1 card and purge this card. Stays in your hand when your turn ends. ||
+|-
+| [[Lunchbox]] || [[File:CardLunchbox.png|100px|frameless|Lunchbox Card Image]] || 4010 || Neutral ([[Academy]]) || Starter || Tactic || 0 || The next card you play gets +1 '''Repeat'''. || Only obtainable by getting the [[Backpack]] artifact.
+|-
+| [[Pencil]] || [[File:CardPencil.png|100px|frameless|Pencil Card Image]] || 4011 || Neutral ([[Academy]]) || Starter || Attack || 0 || Strike a '''Shield'''-less entity. || Only obtainable by getting the [[Backpack]] artifact.
+|-
+| [[Runners]] || [[File:CardRunners.png|100px|frameless|Runners Card Image]] || 4012 || Neutral ([[Academy]]) || Starter || Move || 0 || Move to any tile. || Only obtainable by getting the [[Backpack]] artifact.
+|-
+| [[Honey]] || [[File:CardHoney.png|100px|frameless|Honey Card Image]] || 10003 || N/A || Junk || Junk || 1 || Purge this card. If unplayed, give a '''Shield''' to all '''[[Queen Bee|Bees]]''' || Only obtainable by being struck by a [[Guard Bee]].
+|-
+| [[Check]] || [[File:CardCheck.png|100px|frameless|Check Card Image]] || 10001 || N/A || Junk || Junk || 1 || Purge this card. If unplayed, spawn a '''[[Grandmaster|Rook]]''' on a random tile next turn. || Only obtainable by being struck by a [[Grandmaster]] piece.
+|-
+| [[Checkmate]] || [[File:CardCheck.png|100px|frameless|Checkmate Card Image]] || 10002 || N/A || Junk || Junk || 1 || Purge this card. If unplayed, spawn a '''[[Grandmaster|Queen]]''' on a random tile next turn. || Only obtainable by being struck by a [[Grandmaster]] piece with Ultimate Bosses.
+|-
+| [[Hemorrhage]] || [[File:CardHemorrhage.png|100px|frameless|Hemorrhage Card Image]] || 10004 || N/A || Junk || Junk || 1 || Purge this card. If unplayed, create a copy of this card in your discard pile. || Only obtainable by being struck be the [[Hemophage]].
+|-
+| [[Hemorrhage+]] || [[File:CardHemorrhage.png|100px|frameless|Hemorrhage+ Card Image]] || 10005 || N/A || Junk || Junk || 1 || Purge this card. If unplayed, create a copy of this card in your draw pile. || Only obtainable by being struck be the [[Hemophage]] with Ultimate Bosses.
+|-
+| [[Gunner Assist!]] || [[File:CardGunnerAssist.png|100px|frameless|Gunner Assist! Card Image]] || 163 || N/A || Created || Tactic || 0 || Call a Gunner pilot to unleash a scorching artillery strike! || Launches 8 rockets at random invaders. 
+Only obtainable on the final phase of the [[Overseer]] fight when playing as [[Stinger]] or [[Keeper]].
+|-
+| [[Stinger Assist!]] || [[File:CardStingerAssist.png|100px|frameless|Stinger Assist! Card Image]] || 164 || N/A || Created || Tactic || 0 || Call a Stinger pilot to slice up your foes! || Strikes a random invader and all tiles diagonal to it. This is repeated up to 6 times.
+Only obtainable on the final phase of the [[Overseer]] fight when playing as [[Gunner]] or [[Keeper]].
+|-
+| [[Keeper Assist!]] || [[File:CardKeeperAssist.png|100px|frameless|Keeper Assist! Card Image]] || 165 || N/A || Created || Tactic || 0 || Call a Keeper pilot to rain down a meteor shower! || Strikes a random invader. This is repeated up to 15 times.
+Only obtainable on the final phase of the [[Overseer]] fight when playing as [[Gunner]] or [[Stinger]].
+|}
