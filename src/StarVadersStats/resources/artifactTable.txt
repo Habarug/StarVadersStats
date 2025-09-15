@@ -1,0 +1,322 @@
+{| class="wikitable sortable"
+|-
+! Artifact !! ID !! Class & Pack/Pilot !! Rarity !! class="unsortable" | Description !! class="unsortable" | Notes
+|-
+| [[Quantum Burn]] [[File:ArtifactQuantumBurn.png|32px|frameless|(Image)]] || 5 || [[Gunner]] || Common || 50% chance of not actually burning cards. Still triggers 'on burn' effects! || Overheating still ends your turn, even if the burn is prevented, unless you also have [[Hot Head]].
+|-
+| [[Threat Radar]] [[File:ArtifactThreatRadar.png|32px|frameless|(Image)]] || 7 || [[Gunner]] || Common || Each time you move into a '''Danger Zone''', draw 1 card. || 
+|-
+| [[Thermal Beam]] [[File:ArtifactThermalBeam.png|32px|frameless|(Image)]] || 11 || [[Gunner]] || Common || Unused '''Heat''' sink is added to your '''Heat''' sink next turn. || 
+|-
+| [[Shrapnel]] [[File:ArtifactShrapnel.png|32px|frameless|(Image)]] || 17 || [[Gunner]] || Common || ALL detonations also fire a '''Bullet''' in a random upward direction. || 
+|-
+| [[Insulation]] [[File:ArtifactInsulation.png|32px|frameless|(Image)]] || 21 || [[Gunner]] || Common || The first time you draw a '''Junk''' or '''Burnt''' card each turn, draw 1 card. || 
+|-
+| [[Bomber Mech]] [[File:ArtifactBomberMech.png|32px|frameless|(Image)]] || 33 || [[Gunner]] || Common || Your mech is a '''[[Bomb]]'''. It detonates and strikes adjacent tiles when struck. || 
+|-
+| [[Supply Drop (Artifact)|Supply Drop]] [[File:ArtifactSupplyDrop.png|32px|frameless|(Image)]] || 35 || [[Gunner]] || Common || Start with a '''[[Supply Drop (Item)|Supply Drop]]''' on the grid. When destroyed, draw 3 cards and reset your '''Heat'''. || 
+|-
+| [[Mine Field]] [[File:ArtifactMineField.png|32px|frameless|(Image)]] || 37 || [[Gunner]] || Common || Start with 3 '''[[Nova Bomb (Item)|Bombs]]''' on the grid. || 
+|-
+| [[Ultra Coolant]] [[File:ArtifactUltraCoolant.png|32px|frameless|(Image)]] || 61 || [[Gunner]] || Common || On obtain, remove all starter '''[[Shift]]''' cards from your deck. Then, gain 3 copies of a random '''Move''' card. || 
+|-
+| [[Volcanic Ash]] [[File:ArtifactVolcanicAsh.png|32px|frameless|(Image)]] || 69 || [[Gunner]] || Common || When you reshuffle your discard pile, up to 3 random '''Burnt''' cards stay in your discard pile. || 
+|-
+| [[Hot Head]] [[File:ArtifactHotHead.png|32px|frameless|(Image)]] || 1 || [[Gunner]] || Legendary || Do not end your turn when you overheat. || Cards are still burnt when you overheat, unless another effect prevents the burn.
+|-
+| [[Holtzmann Shields]] [[File:ArtifactHoltzmannShields.png|32px|frameless|(Image)]] || 8 || [[Gunner]] || Legendary || Any '''Shield''' broken by your '''Bullets''' detonate, striking adjacent tiles. || 
+|-
+| [[Jester]] [[File:ArtifactJester.png|32px|frameless|(Image)]] || 13 || [[Gunner]] || Legendary || When you gain a '''Junk''' card, give it a random '''Component'''. || 
+|-
+| [[Laser Bullets]] [[File:ArtifactLaserBullets.png|32px|frameless|(Image)]] || 16 || [[Gunner]] || Legendary || Your '''Bullets''' become short 4-tile '''LASERS'''. || Lasers pierce through any number of enemies. Bullets with special on-collision properties have unique interactions with this artifact.
+|-
+| [[Mecha OS]] [[File:ArtifactMechaOS.png|32px|frameless|(Image)]] || 18 || [[Gunner]] || Legendary || The first time you shuffle your draw pile each turn, get +2 '''Heat''' sink this turn. || 
+|-
+| [[Flash Fire]] [[File:ArtifactFlashFire.png|32px|frameless|(Image)]] || 24 || [[Gunner]] || Legendary || Your cards with '''[[Fire! (Card Category)|Fire!]]''' in its title get +1 '''Repeat''' and +1 '''[[Heat]]''' cost. || Only cards that have the exact phrase "Fire!" in their title are affected. For example, [[Fire EVERYTHING!]] is not affected, but [[MisFire!]] is. Additionally, any card with the [[Fire! (Component)|Fire! component]] is affected.
+|-
+| [[Balloomb]] [[File:ArtifactBalloomb.png|32px|frameless|(Image)]] || 27 || [[Gunner]] || Legendary || ALL '''[[Bomb|Bombs]]''' are pushed upwards when your turn ends. You have no '''Bomb''' limit. || This also includes non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Red Giant]] [[File:ArtifactRedGiant.png|32px|frameless|(Image)]] || 28 || [[Gunner]] || Legendary || Cards with '''[[Bomb (Card Category)|Bomb]]''' in their title cost +1 '''Heat'''. Increase the radius of ALL detonations by 1. || 
+|-
+| [[Nova Rays]] [[File:ArtifactNovaRays.png|32px|frameless|(Image)]] || 34 || [[Gunner]] || Legendary || After you burn a card, fire 1 '''Bullet''' up from each '''[[Bomb]]'''. || This also includes non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Big Fridge]] [[File:ArtifactBigFridge.png|32px|frameless|(Image)]] || 43 || [[Gunner]] || Legendary || Cards cost max 1 '''Heat'''. || 
+|-
+| [[Furnace]] [[File:ArtifactFurnace.png|32px|frameless|(Image)]] || 44 || [[Gunner]] || Legendary || While you have 3 or more '''Heat''', each of your cards get +1 '''Repeat'''. || 
+|-
+| [[Tracer Rounds]] [[File:ArtifactTracerRounds.png|32px|frameless|(Image)]] || 58 || [[Gunner]] || Legendary || When your '''Bullets''' miss or strike something '''Immune''', draw 1 card. || 
+|-
+| [[Sonic BOOM]] [[File:ArtifactSonicBoom.png|32px|frameless|(Image)]] || 63 || [[Gunner]] || Legendary || Your '''Bullets''' push instead of striking '''[[Bomb|Bombs]]'''. After a '''[[Bomb]]''' is moved, it detonates and respawns. || This also includes non-player bombs, such as [[Boomer]] and [[Blob-Bomb]].
+|-
+| [[Fire Starter]] [[File:ArtifactFireStarter.png|32px|frameless|(Image)]] || 15 || [[Gunner]] ([[Roxy]]) || Starter || The first time you overheat, draw +2 cards and get +2 '''Heat''' sink next turn. || 
+|-
+| [[Flint & Steel]] [[File:ArtifactFlintAndSteel.png|32px|frameless|(Image)]] || 5004 || [[Gunner]] ([[Roxy]]) || Common || On your first turn, draw +2 cards and get +2 '''Heat''' sink. || 
+|-
+| [[Incinerator]] [[File:ArtifactIncinerator.png|32px|frameless|(Image)]] || 3 || [[Gunner]] ([[Roxy]]) || Legendary || When you overheat, purge the card after burning it. Then, gain '''[[Sparks]]''' in your hand next turn. || 
+|-
+| [[Greenhouse]] [[File:ArtifactGreenhouse.png|32px|frameless|(Image)]] || 64 || [[Gunner]] ([[Roxy]]) || Legendary || Whenever you gain or lose any amount of '''Heat''' sink, increase that amount by 1. || 
+|-
+| [[Perma-Frost]] [[File:ArtifactPermaFrost.png|32px|frameless|(Image)]] || 56 || [[Gunner]] ([[Noel]]) || Starter || Your rightmost card is unburnt and becomes '''Frozen''' when your turn ends. || 
+|-
+| [[Celerity]] [[File:ArtifactCelerity.png|32px|frameless|(Image)]] || 5005 || [[Gunner]] ([[Noel]]) || Common || When you would burn a '''Frozen''' card, it loses '''Frozen''' but no longer becomes '''Burnt'''. Still triggers 'on burn' effects! || 
+|-
+| [[Cold Star]] [[File:ArtifactColdStar.png|32px|frameless|(Image)]] || 65 || [[Gunner]] ([[Noel]]) || Legendary || When the encounter begins, gives '''Frozen''' to 2 random cards in your hand. Your '''Frozen''' cards count as '''Burnt''' cards, and vice-versa. || 
+|-
+| [[Iceberg]] [[File:ArtifactIceberg.png|32px|frameless|(Image)]] || 66 || [[Gunner]] ([[Noel]]) || Legendary || When your turn begins, make '''Frozen''' cards in your hand free. || 
+|-
+| [[The Machine]] [[File:ArtifactMachine.png|32px|frameless|(Image)]] || 45 || [[Gunner]] ([[Zeke]]) || Starter || The first time you burn a card with a '''[[Component]]''' each turn: '''Dismantle''' that card. || Dismantle: Purge that card. Then, as your next turn begins, gain a base (component-less) copy of that card and a random 0 cost card in your hand. ([[Sparks]], [[Propel]], or [[Vapor]])
+|-
+| [[Metal Gear]] [[File:ArtifactMetalGear.png|32px|frameless|(Image)]] || 5006 || [[Gunner]] ([[Zeke]]) || Common || After you play a card that costs 2 or more '''Heat''', draw 1 card and reduce its cost by 1 until played. || 
+|-
+| [[Nuclear Reactor]] [[File:ArtifactNuclearReactor.png|32px|frameless|(Image)]] || 0 || [[Gunner]] ([[Zeke]]) || Legendary || You get +2 '''Heat''' sink. When the encounter begins, give '''[[Heated]]''' to all cards without a '''[[Component]]'''. || 
+|-
+| [[Fi-Tech]] [[File:ArtifactFiTech.png|32px|frameless|(Image)]] || 67 || [[Gunner]] ([[Zeke]]) || Legendary || Whenever you create a 0 cost card, upgrade it with a random '''[[Component]]'''. || 
+|-
+| [[Deflector]] [[File:ArtifactDeflector.png|32px|frameless|(Image)]] || 1000 || [[Stinger]] || Common || When you gain '''Junk''', drop it as a '''Pickup''' in a nearby tile. || 
+|-
+| [[Ambush]] [[File:ArtifactAmbush.png|32px|frameless|(Image)]] || 1004 || [[Stinger]] || Common || Start with 2 '''[[Shuriken|Shurikens]]''' as '''Pickups''' on the grid. || 
+|-
+| [[Razor Sharp]] [[File:ArtifactRazorSharp.png|32px|frameless|(Image)]] || 1013 || [[Stinger]] || Common || Cards that you '''Throw''' pierce through the first entity hit. || 
+|-
+| [[Power Cell]] [[File:ArtifactPowerCell.png|32px|frameless|(Image)]] || 1016 || [[Stinger]] || Common || When you would gain '''Power''' during your turn, you get '''Battery''' instead. || 
+|-
+| [[Bot Feeder]] [[File:ArtifactBotFeeder.png|32px|frameless|(Image)]] || 1023 || [[Stinger]] || Common || When a '''Junk''' card leaves your hand during your turn, draw 1 card. || 
+|-
+| [[Hidden Blade]] [[File:ArtifactHiddenBlade.png|32px|frameless|(Image)]] || 1026 || [[Stinger]] || Common || After you draw 3 cards during your turn, gain a '''[[Shuriken]]''' in your hand. || 
+|-
+| [[Double A]] [[File:ArtifactDoubleA.png|32px|frameless|(Image)]] || 1031 || [[Stinger]] || Common || Start with +1 '''Battery''' for every 5 cards in your deck. || 
+|-
+| [[Transformer]] [[File:ArtifactTransformer.png|32px|frameless|(Image)]] || 1032 || [[Stinger]] || Common || Gain the ability to spend 1 '''Power''' to draw a card, once per turn. Prioritizes '''Flow''' cards. || While you have this artifact, you get a button under your power bank that allows you to draw a card.
+|-
+| [[Static Shock]] [[File:ArtifactStaticShock.png|32px|frameless|(Image)]] || 1034 || [[Stinger]] || Common || After an entity is pushed or pulled, '''Shock''' it if it didn't collide with another entity. || 
+|-
+| [[Voracity]] [[File:ArtifactVoracity.png|32px|frameless|(Image)]] || 1001 || [[Stinger]] || Legendary || Whenever you '''Pickup''' a card during your turn, you strike adjacent tiles. || 
+|-
+| [[Osmosis]] [[File:ArtifactOsmosis.png|32px|frameless|(Image)]] || 1010 || [[Stinger]] || Legendary || After you move, if a '''Shield''' is directly above you, break it to gain 1 '''Battery'''. || 
+|-
+| [[Fried Shields]] [[File:ArtifactFriedShields.png|32px|frameless|(Image)]] || 1011 || [[Stinger]] || Legendary || When a '''Shielded''' entity gets '''Shocked''', break the '''Shield'''. || 
+|-
+| [[Feng Shui]] [[File:ArtifactFengShui.png|32px|frameless|(Image)]] || 1014 || [[Stinger]] || Legendary || When your turn ends, '''Flow''' cards stay in your hand and become free when played. || 
+|-
+| [[Lightning Rod]] [[File:ArtifactLightningRod.png|32px|frameless|(Image)]] || 1017 || [[Stinger]] || Legendary || When an entity moves into a '''Pickup''', give it '''Shock'''. You have a 50% chance of drawing it. || 
+|-
+| [[Assassin]] [[File:ArtifactAssassin.png|32px|frameless|(Image)]] || 1019 || [[Stinger]] || Legendary || Get +1 '''Power''' and draw 1 card when you destroy an entity in the tile directly below your mech. || 
+|-
+| [[One Two Punch]] [[File:ArtifactOneTwoPunch.png|32px|frameless|(Image)]] || 1020 || [[Stinger]] || Legendary || Your cards with '''[[Jab (Card Category)|Jab]]''' in its title get +1 '''Repeat''' for the first 3 turns. || This also affects cards with the [[Jab (Component)|Jab component]].
+|-
+| [[Electric Ray]] [[File:ArtifactElectricRay.png|32px|frameless|(Image)]] || 1029 || [[Stinger]] || Legendary || When your turn ends, apply '''[[Shock]]''' to all [[Invader|invaders]] in your column. || 
+|-
+| [[Trinity]] [[File:ArtifactTrinity.png|32px|frameless|(Image)]] || 1030 || [[Stinger]] || Legendary || On your third turn, gain 3 '''Battery''' and draw 3 additional cards. || 
+|-
+| [[Geothermal]] [[File:ArtifactGeothermal.png|32px|frameless|(Image)]] || 1035 || [[Stinger]] || Legendary || When your turn begins, if you have no '''Battery''', gain 2 '''Battery'''. || 
+|-
+| [[Scavenger]] [[File:ArtifactScavenger.png|32px|frameless|(Image)]] || 1036 || [[Stinger]] || Legendary || Invaders have a 33% chance to drop a '''[[Charge]]''' on their tile when destroyed. || 
+|-
+| [[Mitochondria]] [[File:ArtifactMitochondria.png|32px|frameless|(Image)]] || 1006 || [[Stinger]] ([[Shun]]) || Starter || When your turn begins, '''Shock''' a random Invader. || 
+|-
+| [[Glucose]] [[File:ArtifactGlucose.png|32px|frameless|(Image)]] || 5007 || [[Stinger]] ([[Shun]]) || Common || Whenever you '''Pickup''' a card during your turn, '''Shock''' a random invader. || 
+|-
+| [[Venom]] [[File:ArtifactVenom.png|32px|frameless|(Image)]] || 1009 || [[Stinger]] ([[Shun]]) || Legendary || At the end of the turn, for each entity with '''Shock''', remove '''Shock''' and strike them. || 
+|-
+| [[Spirit Arcs]] [[File:ArtifactSpiritArcs.png|32px|frameless|(Image)]] || 1044 || [[Stinger]] ([[Shun]]) || Legendary || When you strike a '''Shocked''' invader, 50% chance of giving '''Shock''' to a random invader. || 
+|-
+| [[Coral Reef]] [[File:ArtifactCoralReef.png|32px|frameless|(Image)]] || 1040 || [[Stinger]] ([[Hali]]) || Starter || Each turn, gain [[Coral (Card)|a card]] that spawns a '''[[Coral (Item)|Coral]]'''. It strikes random adjacent invaders on movement. || 
+|-
+| [[Deathrattle]] [[File:ArtifactDeathrattle.png|32px|frameless|(Image)]] || 5008 || [[Stinger]] ([[Hali]]) || Common || Your '''[[Coral (Item)|Corals]]''' also trigger when destroyed. || 
+|-
+| [[Colony Morph]] [[File:ArtifactColonyMorph.png|32px|frameless|(Image)]] || 1041 || [[Stinger]] ([[Hali]]) || Legendary || Your '''[[Coral (Item)|Corals]]''' gain an '''Activate''' ability that lets them move 1 tile or strike an adjacent invader. || 
+|-
+| [[Nematocyte]] [[File:ArtifactNematocyte.png|32px|frameless|(Image)]] || 1042 || [[Stinger]] ([[Hali]]) || Legendary || Your '''[[Coral (Item)|Corals]]''' with '''Shock''' strike ALL invaders up to 2 tiles away when triggered. || 
+|-
+| [[Booby Traps]] [[File:ArtifactBoobyTraps.png|32px|frameless|(Image)]] || 1037 || [[Stinger]] ([[Kaia]]) || Starter || All of your '''Pickups''' become '''Booby Traps'''. They have a special effect when triggered during your turn. || Booby Trap: When destroyed, strike its tile. If it is destroyed '''during your turn''', draw it, and if the card is '''RARE''' or '''LEGENDARY''', strike all adjacent tiles too.
+|-
+| [[Black Powder]] [[File:ArtifactBlackPowder.png|32px|frameless|(Image)]] || 5009 || [[Stinger]] ([[Kaia]]) || Trigger and discard all '''Booby Traps''' that have '''[[:Category:Rare Cards|RARE]]''' or '''[[:Category:Legendary Cards|LEGENDARY]]''' rarity at the end of your turn. || 
+|-
+| [[Fool's Gold]] [[File:ArtifactFoolsGold.png|32px|frameless|(Image)]] || 1038 || [[Stinger]] ([[Kaia]]) || Legendary || Your '''Booby Traps''' that have '''LEGENDARY''' rarity strike their entire row and column when triggered during your turn. || 
+|-
+| [[Treasure Chest (Artifact)|Treasure Chest]] [[File:ArtifactTreasureChest.png|32px|frameless|(Image)]] || 1043 || [[Stinger]] ([[Kaia]]) || Legendary || [[Treasure Chest (Item)|Starts on the grid.]] When destroyed, it drops treasure and gives '''Shock''' to 3 random invaders. || When destroyed, it drops a [[Coin]], [[Ruby]] and [[Diamond]] on nearby tiles.
+|-
+| [[Sacred Grounds]] [[File:ArtifactSacredGrounds.png|32px|frameless|(Image)]] || 2002 || [[Keeper]] || Common || Increase the '''Summon''' limit from 3 to 5. Start the encounter with 2 '''[[Totem|Totems]]''' on random tiles. || 
+|-
+| [[Boloney]] [[File:ArtifactBoloney.png|32px|frameless|(Image)]] || 2003 || [[Keeper]] || Common || Whenever you gain '''Junk''', reduce the cooldown of a random '''Spell''' by 1. || 
+|-
+| [[Soul Cage]] [[File:ArtifactSoulCage.png|32px|frameless|(Image)]] || 2010 || [[Keeper]] || Common || Whenever a '''Summon''' is sacrificed, reduce the cooldown of a random '''Spell''' by 1. || 
+|-
+| [[Toymaker]] [[File:ArtifactToymaker.png|32px|frameless|(Image)]] || 2020 || [[Keeper]] || Common || Your cards that spawn entities are not discarded at the end of your turn. || 
+|-
+| [[Sixth Sense]] [[File:ArtifactSixthSense.png|32px|frameless|(Image)]] || 2022 || [[Keeper]] || Common || When your turn begins, discard all '''Junk''' cards in your hand and draw that many cards. || 
+|-
+| [[Spellslinger]] [[File:ArtifactSpellslinger.png|32px|frameless|(Image)]] || 2025 || [[Keeper]] || Common || The first time you cast a '''Spell''' each turn, draw the top card in your draw pile that mentions '''Spell'''. || 
+|-
+| [[Boiling Bubble]] [[File:ArtifactBoilingBubble.png|32px|frameless|(Image)]] || 2036 || [[Keeper]] || Common || After you shuffle your draw pile, gain a '''[[Bubble]]''' in your hand. || 
+|-
+| [[Rosary]] [[File:ArtifactRosary.png|32px|frameless|(Image)]] || 2037 || [[Keeper]] || Common || Each '''Summon''' gains '''Immune''' the turn they are summoned. || 
+|-
+| [[Exorcist]] [[File:ArtifactExorcist.png|32px|frameless|(Image)]] || 2005 || [[Keeper]] || Legendary || When you destroy an entity that is channelling '''Doom''', gain 1 '''Mana''' and draw 1 card. || This extra mana can go past the cap of 5 mana.
+|-
+| [[Vudu Doll]] [[File:ArtifactVuduDoll.png|32px|frameless|(Image)]] || 2007 || [[Keeper]] || Legendary || Whenever the haunted '''Summon''' is destroyed, strike a random '''Shield'''-less invader. || 
+|-
+| [[Reaper]] [[File:ArtifactReaper.png|32px|frameless|(Image)]] || 2008 || [[Keeper]] || Legendary || At the end of each turn, '''Blast''' each '''Summon'''. Draw +1 card each turn. || Summons are blasted after [[Fighting Stance]] would trigger, but before [[Outer Gods]] triggers.
+|-
+| [[Grimoire]] [[File:ArtifactGrimoire.png|32px|frameless|(Image)]] || 2009 || [[Keeper]] || Legendary || You get 2 additional '''Spell''' slots and a random '''Spell'''. || 
+|-
+| [[Familiar]] [[File:ArtifactFamiliar.png|32px|frameless|(Image)]] || 2021 || [[Keeper]] || Legendary || When you reduce a '''Spell''''s cooldown to 0, draw the top '''Tactic''' in your draw pile. || 
+|-
+| [[Focus]] [[File:ArtifactFocus.png|32px|frameless|(Image)]] || 2031 || [[Keeper]] || Legendary || Increase the number values on your bottom '''Spell''' by 2. || 
+|-
+| [[Collector]] [[File:ArtifactCollector.png|32px|frameless|(Image)]] || 2035 || [[Keeper]] || Legendary || At the start of each turn, if you have 3 or more '''Summon''', gain 2 '''Mana'''. || This extra mana can go past the cap of 5 mana.
+|-
+| [[Ritual Blade]] [[File:ArtifactRitualBlade.png|32px|frameless|(Image)]] || 2046 || [[Keeper]] || Legendary || Each turn, the first time you play a card that can spawn entities, draw a 'sacrifice' card and make it free. || 
+|-
+| [[Outer Gods]] [[File:ArtifactOuterGods.png|32px|frameless|(Image)]] || 2056 || [[Keeper]] || Legendary || If you end your turn with no '''Summon''' on the grid, reduct the cooldown of each '''Spell''' by 1. || 
+|-
+| [[Sign Magick]] [[File:ArtifactSignMagick.png|32px|frameless|(Image)]] || 2023 || [[Keeper]] ([[Iris]]) || Starter || The first time you cast a '''Spell''' each turn, gain a '''[[Poof!]]''' in your draw pile. || 
+|-
+| [[Purple Hood]] [[File:ArtifactPurpleHood.png|32px|frameless|(Image)]] || 5010 || [[Keeper]] ([[Iris]]) || Common || Each '''Summon''' spawns with a '''Shield'''. You lose '''[[Conjure]]''' and gain a random '''[[Spell]]'''. || 
+|-
+| [[Dark Medal]] [[File:ArtifactDarkMedal.png|32px|frameless|(Image)]] || 2053 || [[Keeper]] ([[Iris]]) || Legendary || At the start of each fight, permanently add a '''[[Chant]]''' to your campaign deck. || 
+|-
+| [[Wild Magick]] [[File:ArtifactWildMagick.png|32px|frameless|(Image)]] || 2054 || [[Keeper]] ([[Iris]]) || Legendary || After you cast a '''Spell''', randomize its cooldown between 1 and 3. || 
+|-
+| [[Cosmic Bond]] [[File:ArtifactCosmicBond.png|32px|frameless|(Image)]] || 2038 || [[Keeper]] ([[Xenn]]) || Starter || Cards may be attuned with the '''Sun''' or the '''Moon'''. Your starting '''Spell''' upgrades with the amount of attuned cards. || At 6 or more Sun cards, [[Astral Call]] draws 3 cards instead of 1. At 6 or more Moon cards, [[Astral Call]] also gives 2 mana.
+|-
+| [[Alien Rock]] [[File:ArtifactAlienRock.png|32px|frameless|(Image)]] || 5011 || [[Keeper]] ([[Xenn]]) || Common || The first time an '''Item''' is destroyed each turn, draw the top card in your draw pile without '''Sun''' or '''Moon'''. || 
+|-
+| [[Dawnbreaker]] [[File:ArtifactDawnbreaker.png|32px|frameless|(Image)]] || 2048 || [[Keeper]] ([[Xenn]]) || Legendary || Draw the top '''Sun''' card each turn and give it +1 '''Repeat'''. All of your '''Moon''' cards get +2 '''Mana''' cost. || 
+|-
+| [[Nightbringer]] [[File:ArtifactNightbringer.png|32px|frameless|(Image)]] || 2049 || [[Keeper]] ([[Xenn]]) || Legendary || Return a '''Moon''' card from your discard each turn and make it free. All of your '''Sun''' cards get +2 '''Mana''' cost. || 
+|-
+| [[Scarlet Mask]] [[File:ArtifactScarletMask.png|32px|frameless|(Image)]] || 2026 || [[Keeper]] ([[Garu]]) || Starter || '''Multi-Class'''. You can get '''[[Gunner]]''' cards and artifacts. || This artifact only gives access to a small subset of the Gunner pool, not all cards/artifacts.
+|-
+| [[Flare Gun]] [[File:ArtifactFlareGun.png|32px|frameless|(Image)]] || 5012 || [[Keeper]] ([[Garu]]) || Common || The first time you play a '''[[:Category:Fire! cards|Fire!]]''' card each turn, the next [[:Category:Summon cards|card that spawns entities]] is free. || 
+|-
+| [[Magical Gun]] [[File:ArtifactMagicalGun.png|32px|frameless|(Image)]] || 2047 || [[Keeper]] ([[Garu]]) || Legendary || When a '''[[Fire! (Card Category)|Fire!]]''' card leaves your hand unplayed during your turn, fire 1 '''Bullet''' up from each '''Summon'''. || 
+|-
+| [[Blast Legion]] [[File:ArtifactBlastLegion.png|32px|frameless|(Image)]] || 2050 || [[Keeper]] ([[Garu]]) || Legendary || You no longer have a '''[[Bomb]]''' or a '''Summon''' limit. Your player '''[[Bomb|Bombs]]''' are considered to be '''Summon'''. || 
+|-
+| [[Cobalt Mask]] [[File:ArtifactCobaltMask.png|32px|frameless|(Image)]] || 2028 || [[Keeper]] ([[Sura]]) || Starter || '''Multi-Class'''. You can get '''[[Stinger]]''' cards and artifacts. || This artifact only gives access to a small subset of the Stinger pool, not all cards/artifacts.
+|-
+| [[Eager Punch]] [[File:ArtifactEagerPunch.png|32px|frameless|(Image)]] || 5013 || [[Keeper]] ([[Sura]]) || Common || The first time you play a [[:Category:Summon cards|card that spawns entities]] each turn, the next '''[[:Category:Jab cards|Jab]]''' card you play gets +1 '''Repeat'''. || 
+|-
+| [[Voltaic Coil]] [[File:ArtifactVoltaicCoil.png|32px|frameless|(Image)]] || 2051 || [[Keeper]] ([[Sura]]) || Legendary || When a '''Shocked''' entity is destroyed or loses '''Shock''', recharge each '''Summon''' on the grid. || 
+|-
+| [[Hydrokinesis]] [[File:ArtifactHydrokinesis.png|32px|frameless|(Image)]] || 2052 || [[Keeper]] ([[Sura]]) || Legendary || When you play a card that spawns an entity, draw the top '''Flow''' card in your draw pile. || 
+|-
+| [[Wormhole]] [[File:ArtifactWormhole.png|32px|frameless|(Image)]] || 41 || Neutral || Common || Replenish '''Chrono Token'''. After you '''Rewind''', gain '''[[Warp]]''' in your hand. || 
+|-
+| [[Nemesis]] [[File:ArtifactNemesis.png|32px|frameless|(Image)]] || 73 || Neutral || Common || Each turn, spawn an '''[[Auto Bomb]]''' on a random tile near the middle of the grid. || 
+|-
+| [[Multi-Pass]] [[File:ArtifactMultiPass.png|32px|frameless|(Image)]] || 75 || Neutral || Common || Each turn, make a random card in your hand with two or more '''Traits''' free. || 
+|-
+| [[Gift Card]] [[File:ArtifactGiftCard.png|32px|frameless|(Image)]] || 77 || Neutral || Common || Each turn, return a random 0 cost card from your discard pile to your hand. || 
+|-
+| [[Lizard Soul]] [[File:ArtifactLizardSoul.png|32px|frameless|(Image)]] || 106 || Neutral || Common || Replenish '''Chrono Token''' and heal all of your '''Doom'''. You get +1 max '''Doom'''. || 
+|-
+| [[Mystery Bear]] [[File:ArtifactMysteryBear.png|32px|frameless|(Image)]] || 107 || Neutral || Common || When the encounter begins, gain a random '''LEGENDARY''' card and make it free until played. || 
+|-
+| [[Starter Fluid]] [[File:ArtifactStarterFluid.png|32px|frameless|(Image)]] || 30 || Neutral || Legendary || The first '''Move''' or '''Tactic''' played each turn gets +1 '''Repeat'''. || 
+|-
+| [[Retro Specters]] [[File:ArtifactRetroSpecters.png|32px|frameless|(Image)]] || 59 || Neutral || Legendary || Each turn, the first card that would be discarded when played stays in your hand instead. || 
+|-
+| [[Wanderer]] [[File:ArtifactWanderer.png|32px|frameless|(Image)]] || 60 || Neutral || Legendary || Once per turn, after you play a '''Move''' card, reduce the cost of adjacent cards by 1. || 
+|-
+| [[Engi-89]] [[File:ArtifactEngi89.png|32px|frameless|(Image)]] || 62 || Neutral || Legendary || Each turn, a random '''Attack''' in your hand gets +1 '''Repeat''' the next time it's played. || 
+|-
+| [[The Egg]] [[File:ArtifactEgg.png|32px|frameless|(Image)]] || 5003 || Neutral || Legendary || If a card leaves your hand without being played, reduce its cost by 1 until played. || 
+|-
+| [[Mobius Gem]] [[File:ArtifactMobiusGem.png|32px|frameless|(Image)]] || 70 || Neutral || Special || You get a free card removal each time you visit [[Min's]]. Ignore the minimum deck size when removing cards. || 
+|-
+| [[Cosmic Dust]] [[File:ArtifactCosmicDust.png|32px|frameless|(Image)]] || 3000 || Neutral || Special || While you have this artifact, all card rewards and cards at [[Min's]] will be upgraded. || 
+|-
+| [[Cherubim]] [[File:ArtifactCherubim.png|32px|frameless|(Image)]] || 3001 || Neutral || Special || Spawn an extra '''[[Time Angel]]''' at the start of each encounter. || 
+|-
+| [[Gemini]] [[File:ArtifactGemini.png|32px|frameless|(Image)]] || 3002 || Neutral || Special || On obtain, duplicate all cards in your deck. Card removals are 50% off. || 
+|-
+| [[Anti-Mag]] [[File:ArtifactAntiMag.png|32px|frameless|(Image)]] || 12 || Neutral ([[Tempest]]) || Common || Each turn, the first time a 'push' or 'pull' card is played, reduce the cost of a random card in your hand by 1. || 
+|-
+| [[Storm Chaser]] [[File:ArtifactStormChaser.png|32px|frameless|(Image)]] || 87 || Neutral ([[Tempest]]) || Common || When your turn begins, gain a random '''Gust''' card. || 
+|-
+| [[Wind God]] [[File:ArtifactWindGod.png|32px|frameless|(Image)]] || 86 || Neutral ([[Tempest]]) || Legendary || Your '''Move''' cards are free for the first 3 turns. || 
+|-
+| [[Robo-Parrot]] [[File:ArtifactRoboParrot.png|32px|frameless|(Image)]] || 57 || Neutral ([[Repeater (Pack)|Repeater]]) || Common || After the first time you play a card with '''Repeats''', add that many 0-cost copies in your hand. || 
+|-
+| [[Peashooter]] [[File:ArtifactPeashooter.png|32px|frameless|(Image)]] || 76 || Neutral ([[Repeater (Pack)|Repeater]]) || Common || After you play a '''Repeated''' card, strike a random '''Shield'''-less invader. || 
+|-
+| [[Repeater (Artifact)|Repeater]] [[File:ArtifactRepeater.png|32px|frameless|(Image)]] || 32 || Neutral ([[Repeater (Pack)|Repeater]]) || Legendary || Your cards that are '''Repeated''' get +1 '''Repeat'''. || 
+|-
+| [[Red Brand]] [[File:ArtifactRedBrand.png|32px|frameless|(Image)]] || 85 || Neutral ([[Spectral]]) || Common || The first time you purge a card each turn, your next '''Attack''' is free. || 
+|-
+| [[Recycler]] [[File:ArtifactRecycler.png|32px|frameless|(Image)]] || 25 || Neutral ([[Spectral]]) || Legendary || The first time you purge a non-'''Junk''' card each turn, create a copy of that card in your hand. || 
+|-
+| [[Haunted Mirror]] [[File:ArtifactHauntedMirror.png|32px|frameless|(Image)]] || 74 || Neutral ([[Spectral]]) || Legendary || Purge the first '''Tactic''' played each encounter. Gain a '''Phantom''' copy of it in you hand each turn. || 
+|-
+| [[Bandages]] [[File:ArtifactBandages.png|32px|frameless|(Image)]] || 78 || Neutral ([[Guardian]]) || Common || When your mech is struck, draw the top '''Tactic''' card in your draw pile and reduce its cost by 1 until played. || 
+|-
+| [[Helping Hand]] [[File:ArtifactHelpingHand.png|32px|frameless|(Image)]] || 81 || Neutral ([[Guardian]]) || Common || During your turn, if an entity gets a '''Shield''', reduce the cost of a random card by 1. || 
+|-
+| [[Seraphim]] [[File:ArtifactSeraphim.png|32px|frameless|(Image)]] || 6 || Neutral ([[Guardian]]) || Legendary || Each turn, gain a '''Shield'''. The first time you break a '''Shield''' each turn, draw 1 card. || 
+|-
+| [[Blueprint]] [[File:ArtifactBlueprint.png|32px|frameless|(Image)]] || 68 || Neutral ([[Inventor]]) || Common || When your turn begins, upgrade a random card in your hand with a random '''Component'''. || 
+|-
+| [[Interlinked]] [[File:ArtifactInterlinked.png|32px|frameless|(Image)]] || 1024 || Neutral ([[Inventor]]) || Common || When the encounter begins, give '''[[Linked]]''' to a random card for every 5 cards in your deck. || 
+|-
+| [[Chaos Drive]] [[File:ArtifactChaosDrive.png|32px|frameless|(Image)]] || 79 || Neutral ([[Inventor]]) || Legendary || Cards without a '''Component''' are free but will purge themselves when played. || 
+|-
+| [[Haywire]] [[File:ArtifactHaywire.png|32px|frameless|(Image)]] || 20 || Neutral ([[Salvage]]) || Common || Draw +1 card each turn. After you shuffle your draw pile, strike your mech || 
+|-
+| [[Peanut Butter]] [[File:ArtifactPeanutButter.png|32px|frameless|(Image)]] || 84 || Neutral ([[Salvage]]) || Common || All '''[[Jam]]''' cards are replaced with '''[[Butter]]''' cards. || 
+|-
+| [[Garbage Truck]] [[File:ArtifactGarbageTruck.png|32px|frameless|(Image)]] || 80 || Neutral ([[Salvage]]) || Legendary || After you play a '''Move''' card, draw a random '''Junk''' card from your draw pile. || 
+|-
+| [[Panic Mode]] [[File:ArtifactPanicMode.png|32px|frameless|(Image)]] || 72 || Neutral ([[Abyssal]]) || Common || When your turn begins, if an invader is channelling '''Doom''', draw +2 cards. || 
+|-
+| [[Hope]] [[File:ArtifactHope.png|32px|frameless|(Image)]] || 82 || Neutral ([[Abyssal]]) || Common || Whenever you gain any type of '''Doom''', strike 3 random invaders. || 
+|-
+| [[Moonlit Ritual]] [[File:ArtifactMoonlitRitual.png|32px|frameless|(Image)]] || 83 || Neutral ([[Abyssal]]) || Legendary || Every turn, add a copy of '''[[Dark Power]]''' to your hand. An additional invader may start channelling '''Doom''' each turn. || 
+|-
+| [[Asteroid Belt]] [[File:ArtifactAsteroidBelt.png|32px|frameless|(Image)]] || 89 || Neutral ([[Tectonic]]) || Common || Start with 3 '''[[Boulder|Boulders]]''' on the grid. If there are at least 3 '''Item''' on the grid, draw 1 additional card each turn. || 
+|-
+| [[3D Printer]] [[File:Artifact3DPrinter.png|32px|frameless|(Image)]] || 90 || Neutral ([[Tectonic]]) || Common || The first card that can spawn entities that you play each encounter gets +2 '''Repeat'''. || 
+|-
+| [[Free Delivery]] [[File:ArtifactFreeDelivery.png|32px|frameless|(Image)]] || 88 || Neutral ([[Tectonic]]) || Legendary || Each turn, the first time you play a card that can spawn entities, the next card you play is free. || 
+|-
+| [[Fighting Stance]] [[File:ArtifactFightingStance.png|32px|frameless|(Image)]] || 93 || Neutral ([[C-C-Combo]]) || Common || If you have 3 or more '''Combo''' when your turn ends, your next '''Attack''' gets +1 '''Repeat'''. || 
+|-
+| [[Target Practice]] [[File:ArtifactTargetPractice.png|32px|frameless|(Image)]] || 94 || Neutral ([[C-C-Combo]]) || Common || Start the encounter with 2 '''[[Target|Targets]]''' on the grid. || 
+|-
+| [[Hyper Combo]] [[File:ArtifactHyperCombo.png|32px|frameless|(Image)]] || 92 || Neutral ([[C-C-Combo]]) || Legendary || When you gain '''Combo''', gain +1 '''Combo'''. Your multipliers for '''Stars''' goes up to 10! || 
+|-
+| [[Null Space]] [[File:ArtifactNullSpace.png|32px|frameless|(Image)]] || 97 || Neutral ([[Dimensional]]) || Common || Each turn, if you don't have '''[[Blank]]''' in your hand, create one in your hand. || 
+|-
+| [[Inner Void]] [[File:ArtifactInnerVoid.png|32px|frameless|(Image)]] || 95 || Neutral ([[Dimensional]]) || Legendary || If you end your turn with no cards in your hand, start the next turn with 3 more cards. || 
+|-
+| [[Old Comet]] [[File:ArtifactOldComet.png|32px|frameless|(Image)]] || 96 || Neutral ([[Dimensional]]) || Legendary || When a '''LEGENDARY''' card leaves your hand without being played, give that card +2 '''Repeat''' when played. || 
+|-
+| [[Lucky Dice]] [[File:ArtifactLuckyDice.png|32px|frameless|(Image)]] || 5000 || Neutral ([[Beach]]) || Common || You are '''LUCKY!''' || "Lucky!" gives the following effects:<br>More chance of rare cards in combat rewards and [[Min's]]. More sales and bundles at Min's.<br>When a card that mentions "[[:Category:Random Cards|random]]" enters your hand, it has a 25% chance of getting +1 Repeat.<br>Other artifacts with a % chance have 25% more chance of activating.<br>When you strike a random invader, strike invaders channeling Doom first.
+|-
+| [[Sandcastle]] [[File:ArtifactSandcastle.png|32px|frameless|(Image)]] || 5001 || Neutral ([[Beach]]) || Common || When the encounter begins, give [[Sandy]] to a random card for every 5 cards in your deck. || Sandy is a component that strikes a random invader when you play the card.
+|-
+| [[Scuba Mask]] [[File:ArtifactScubaMask.png|32px|frameless|(Image)]] || 5002 || Neutral ([[Beach]]) || Common || Draw +1 card for the first three turns. You have access to cards and artifacts from ALL packs. || 
+|-
+| [[The Black Cat (Card)|The Black Cat]] [[File:ArtifactBlackCat.png|32px|frameless|(Image)]] || 6000 || Neutral ([[Full Moon]]) || Common || Start with '''[[The Black Cat (Item)|The Black Cat]]''' on the grid. It is very hard to kill... || 
+|-
+| [[Hockey Mask]] [[File:ArtifactHockeyMask.png|32px|frameless|(Image)]] || 6001 || Neutral ([[Full Moon]]) || Common || When you move to a tile adjacent to an isolated invader, draw 1 card. || 
+|-
+| [[Haunted House]] [[File:ArtifactHauntedHouse.png|32px|frameless|(Image)]] || 6002 || Neutral ([[Full Moon]]) || Legendary || When a non-Boss invader loses its '''Shield''', 50% chance to sacrifice it. || 
+|-
+| [[Backpack]] [[File:ArtifactBackpack.png|32px|frameless|(Image)]] || 6003 || Neutral ([[Academy]]) || Common || On obtain, add 3 special STARTER cards to your deck. || Adds [[Lunchbox]], [[Pencil]], and [[Runners]] to your deck.
+|-
+| [[Teacher's Pet]] [[File:ArtifactTeachersPet.png|32px|frameless|(Image)]] || 6004 || Neutral ([[Academy]]) || Common || Each turn, make a random '''[[:Category:Starter cards|STARTER]]''' card in your hand free until played. All '''[[:Category:Common cards|COMMON]]''' cards also count as STARTER cards. || 
+|-
+| [[Schoolbus]] [[File:ArtifactSchoolbus.png|32px|frameless|(Image)]] || 6005 || Neutral ([[Academy]]) || Legendary || After you play a '''[[:Category:Starter cards|STARTER]]''' card, draw the topmost '''[[:Category:Legendary cards|LEGENDARY]]''' card in your draw pile. || 
+|-
+| [[Rock]] [[File:ArtifactRock.png|32px|frameless|(Image)]] || 91 || N/A || N/A || Does nothing. || Only obtainable from an artifact reward with the [[Tunnel Vision]] modifier active.
+|-
+| [[Cosmic Relic|The LINK]] [[File:ArtifactChaosRelicPiece.png|32px|frameless|(Image)]] || 4000 || N/A || N/A ||  || Obtainable from the [[True Ending|Special Offer]] offered before each boss. Must be taken 3 times to go into the [[True Ending]].
+|-
+| [[Cosmic Relic|Cosmic Relic (1/3)]] [[File:ArtifactChaosRelic1third.png|32px|frameless|(Image)]] || 4001 || N/A || N/A ||  || Appears at the top of your artifact list when you've taken [[The LINK]] one time.
+|-
+| [[Cosmic Relic|Cosmic Relic (2/3)]] [[File:ArtifactChaosRelic2third.png|32px|frameless|(Image)]] || 4002 || N/A || N/A ||  || Appears at the top of your artifact list when you've taken [[The LINK]] two times.
+|-
+| [[Cosmic Relic|Cosmic Relic (Complete)]] [[File:ArtifactChaosRelicFull.png|32px|frameless|(Image)]] || 4003 || N/A || N/A ||  || Appears at the top of your artifact list when you've taken [[The LINK]] three times. Gives access to the [[True Ending]].
+|}

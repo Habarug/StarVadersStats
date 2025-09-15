@@ -24,13 +24,13 @@ def loadRuns(rootDir):
 
         runs[directory] = {}
 
-        with open(os.path.join(rundir, "rundata.json")) as f:
+        with open(os.path.join(rundir, "rundata.json"), "r") as f:
             runs[directory]["rundata"] = json.load(f)
 
-        with open(os.path.join(rundir, "playerdata.json")) as f:
+        with open(os.path.join(rundir, "playerdata.json"), "r") as f:
             runs[directory]["playerdata"] = json.load(f)
 
-        with open(os.path.join(rundir, "challengedata.json")) as f:
+        with open(os.path.join(rundir, "challengedata.json"), "r") as f:
             runs[directory]["challengedata"] = json.load(f)
 
     if len(runs):
@@ -85,14 +85,6 @@ def loadRuns(rootDir):
 
 
 def loadCardDatabase():
-    def _get_link_text(string):
-        wikitext = wtp.parse(string)
-        if not len(wikitext.wikilinks):
-            return string
-        if wikitext.wikilinks[0].text:
-            return wikitext.wikilinks[0].text
-        return wikitext.wikilinks[0].title
-
     with open(os.path.join(curDir, "resources", "cardTable.txt"), "r") as f:
         cardTable = wtp.parse(f.read()).tables[0].data()
 
@@ -112,3 +104,39 @@ def loadCardDatabase():
             "Cost": [row[6] for row in cardTable[1:]],
         }
     )
+
+
+def loadArtifactDatabase():
+    with open(os.path.join(curDir, "resources", "artifactTable.txt"), "r") as f:
+        artifactTable = wtp.parse(f.read()).tables[0].data()
+
+    return pd.DataFrame(
+        {
+            "Artifact": [_get_link_text(row[0]) for row in artifactTable[1:]],
+            "ID": [row[1] for row in artifactTable[1:]],
+            "Class": [
+                _get_link_text(row[2].split(" ", 1)[0]) for row in artifactTable[1:]
+            ],
+            "Pack": [
+                _get_link_text(row[2].split(" ", 1)[1])
+                if (len(row[2].split(" ")) > 1)
+                else None
+                for row in artifactTable[1:]
+            ],
+            "Rarity": [row[3] for row in artifactTable[1:]],
+        }
+    )
+
+
+#################
+# region UTILITIES
+#################
+
+
+def _get_link_text(string):
+    wikitext = wtp.parse(string)
+    if not len(wikitext.wikilinks):
+        return string
+    if wikitext.wikilinks[0].text:
+        return wikitext.wikilinks[0].text
+    return wikitext.wikilinks[0].title
