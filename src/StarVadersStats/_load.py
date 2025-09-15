@@ -1,10 +1,30 @@
 import json
 import os
+from datetime import datetime as dt
 
 import pandas as pd
 import wikitextparser as wtp
 
 curDir = os.path.dirname(__file__)
+
+pilotDict = {
+    "0": "Roxy",
+    "1": "Zeke",
+    "3": "Noel",
+    "100": "Shun",
+    "101": "Hali",
+    "102": "Kaia",
+    "200": "Iris",
+    "201": "Xenn",
+    "202": "Garu",
+    "203": "Sura",
+}
+
+classDict = {
+    "0": "Gunner",
+    "1": "Stinger",
+    "2": "Keeper",
+}
 
 
 def loadRuns(rootDir):
@@ -37,8 +57,14 @@ def loadRuns(rootDir):
         return pd.DataFrame(
             {
                 "runID": [run["rundata"]["runID"] for _, run in runs.items()],
+                "Time": [_get_datetime(dir) for dir in runs],
                 "PilotName": [
-                    run["playerdata"]["PilotName"] for _, run in runs.items()
+                    _get_pilotname(run["playerdata"]["PilotName"])
+                    for _, run in runs.items()
+                ],
+                "ClassName": [
+                    _get_classname(run["playerdata"]["ClassName"])
+                    for _, run in runs.items()
                 ],
                 "Difficulty": [
                     run["challengedata"]["Difficulty"] for _, run in runs.items()
@@ -140,3 +166,21 @@ def _get_link_text(string):
     if wikitext.wikilinks[0].text:
         return wikitext.wikilinks[0].text
     return wikitext.wikilinks[0].title
+
+
+def _get_pilotname(i):
+    if str(i) in pilotDict:
+        return pilotDict[str(i)]
+    else:
+        return str(i)
+
+
+def _get_classname(i):
+    if str(i) in classDict:
+        return classDict[str(i)]
+    else:
+        return str(i)
+
+
+def _get_datetime(dir):
+    return dt.strptime(dir[3:18], "%Y_%m_%d_%H_%M")
