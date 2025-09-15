@@ -27,33 +27,20 @@ classDict = {
 }
 
 
-def loadRuns(rootDir):
-    runs = {}
+class Load:
+    def __init__(self, rootDir):
+        self.rootDir = rootDir
 
-    for directory in os.listdir(rootDir):
-        rundir = os.path.join(rootDir, directory)
+        self.carddb = loadCardDatabase()
+        self.artifactdb = loadArtifactDatabase()
 
-        if not all(
-            file in os.listdir(rundir)
-            for file in ["rundata.json", "playerdata.json", "challengedata.json"]
-        ):
-            raise Warning(
-                f"Directory {directory} does not contain the required files, skipping"
-            )
-            continue
+        self.runs = loadRuns(self.rootDir)
 
-        runs[directory] = {}
-
-        with open(os.path.join(rundir, "rundata.json"), "r") as f:
-            runs[directory]["rundata"] = json.load(f)
-
-        with open(os.path.join(rundir, "playerdata.json"), "r") as f:
-            runs[directory]["playerdata"] = json.load(f)
-
-        with open(os.path.join(rundir, "challengedata.json"), "r") as f:
-            runs[directory]["challengedata"] = json.load(f)
-
-    if len(runs):
+    def get_df_runs(self):
+        runs = self.runs
+        if not len(runs):
+            raise Warning("No runs found, return empty Dataframe")
+            return pd.DataFrame(), pd.DataFrame()
         return pd.DataFrame(
             {
                 "runID": [run["rundata"]["runID"] for _, run in runs.items()],
@@ -105,9 +92,43 @@ def loadRuns(rootDir):
                 "Seed": [run["rundata"]["seed"] for _, run in runs.items()],
             }
         )
-    else:
-        raise Warning("No runs found, return empty Dataframe")
-        return pd.DataFrame()
+
+    def get_df_cards(self):
+        carddb = self.carddb[
+            (self.carddb["Rarity"] != "Junk") & (self.carddb["Rarity"] != "Created")
+        ]
+
+        df_cards = pd.DataFrame(columns=carddb["Card"])
+        return df_cards
+
+
+def loadRuns(rootDir):
+    runs = {}
+
+    for directory in os.listdir(rootDir):
+        rundir = os.path.join(rootDir, directory)
+
+        if not all(
+            file in os.listdir(rundir)
+            for file in ["rundata.json", "playerdata.json", "challengedata.json"]
+        ):
+            raise Warning(
+                f"Directory {directory} does not contain the required files, skipping"
+            )
+            continue
+
+        runs[directory] = {}
+
+        with open(os.path.join(rundir, "rundata.json"), "r") as f:
+            runs[directory]["rundata"] = json.load(f)
+
+        with open(os.path.join(rundir, "playerdata.json"), "r") as f:
+            runs[directory]["playerdata"] = json.load(f)
+
+        with open(os.path.join(rundir, "challengedata.json"), "r") as f:
+            runs[directory]["challengedata"] = json.load(f)
+
+    return runs
 
 
 def loadCardDatabase():

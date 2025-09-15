@@ -27,7 +27,6 @@ class SVStats:
         else:
             self.rundir = rundir
 
-        self.df_runs = _load.loadRuns(self.rundir)
-
-        self.df_cards = _load.loadCardDatabase()
-        self.df_artifacts = _load.loadArtifactDatabase()
+        self._load = _load.Load(self.rundir)
+        self.df_runs = self._load.get_df_runs()
+        self.df_cards = self._load.get_df_cards()
