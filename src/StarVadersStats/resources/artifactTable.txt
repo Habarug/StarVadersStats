@@ -130,7 +130,7 @@
 |-
 | [[Booby Traps]] [[File:ArtifactBoobyTraps.png|32px|frameless|(Image)]] || 1037 || [[Stinger]] ([[Kaia]]) || Starter || All of your '''Pickups''' become '''Booby Traps'''. They have a special effect when triggered during your turn. || Booby Trap: When destroyed, strike its tile. If it is destroyed '''during your turn''', draw it, and if the card is '''RARE''' or '''LEGENDARY''', strike all adjacent tiles too.
 |-
-| [[Black Powder]] [[File:ArtifactBlackPowder.png|32px|frameless|(Image)]] || 5009 || [[Stinger]] ([[Kaia]]) || Trigger and discard all '''Booby Traps''' that have '''[[:Category:Rare Cards|RARE]]''' or '''[[:Category:Legendary Cards|LEGENDARY]]''' rarity at the end of your turn. || 
+| [[Black Powder]] [[File:ArtifactBlackPowder.png|32px|frameless|(Image)]] || 5009 || [[Stinger]] ([[Kaia]]) || Common || Trigger and discard all '''Booby Traps''' that have '''[[:Category:Rare Cards|RARE]]''' or '''[[:Category:Legendary Cards|LEGENDARY]]''' rarity at the end of your turn. || 
 |-
 | [[Fool's Gold]] [[File:ArtifactFoolsGold.png|32px|frameless|(Image)]] || 1038 || [[Stinger]] ([[Kaia]]) || Legendary || Your '''Booby Traps''' that have '''LEGENDARY''' rarity strike their entire row and column when triggered during your turn. || 
 |-
