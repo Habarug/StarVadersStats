@@ -98,8 +98,6 @@ class Load:
             (self.carddb["Rarity"] != "Junk") & (self.carddb["Rarity"] != "Created")
         ]
 
-        # decks = [[self._get_card_name(card) for card in deck] for run["playerdata"]["deckCardDataList"]["Card"] for _, run in self.runs.items() for deck in run]
-        # decks = [[decks["Card"]] for _, run in self.runs.items() for decks in run["playerdata"]["deckCardDataList"]]
         decks = [
             [
                 self._get_card_name(deck["Card"])
@@ -107,7 +105,8 @@ class Load:
             ]
             for _, run in self.runs.items()
         ]
-        # df_cards = pd.DataFrame(columns=carddb["Card"])
+        self.card_decks = decks
+
         df_cards = pd.DataFrame(
             {
                 card: [sum([c == card for c in deck]) for deck in decks]
@@ -116,8 +115,37 @@ class Load:
         )
         return df_cards
 
-    def _get_card_name(self, i):
-        return self.carddb[self.carddb["ID"] == str(i)]["Card"].iloc[0]
+    def _get_card_name(self, ID):
+        if (int(ID) == self.carddb["ID"]).any():
+            return self.carddb[self.carddb["ID"] == int(ID)]["Card"].iloc[0]
+        else:
+            return str(ID)
+
+    def get_df_artifacts(self):
+        artifactdb = self.artifactdb[self.artifactdb["Rarity"] != "N/A"]
+
+        decks = [
+            [
+                self._get_artifact_name(artifact)
+                for artifact in run["playerdata"]["artifactList"]
+            ]
+            for _, run in self.runs.items()
+        ]
+        self.artifact_decks = decks
+
+        df_artifacts = pd.DataFrame(
+            {
+                artifact: [sum([a == artifact for a in deck]) for deck in decks]
+                for artifact in artifactdb["Artifact"]
+            }
+        )
+        return df_artifacts
+
+    def _get_artifact_name(self, ID):
+        if (int(ID) == self.artifactdb["ID"]).any():
+            return self.artifactdb[self.artifactdb["ID"] == int(ID)]["Artifact"].iloc[0]
+        else:
+            return str(ID)
 
 
 def loadRuns(rootDir):
@@ -153,7 +181,7 @@ def loadCardDatabase():
     with open(os.path.join(curDir, "resources", "cardTable.txt"), "r") as f:
         cardTable = wtp.parse(f.read()).tables[0].data()
 
-    return pd.DataFrame(
+    df = pd.DataFrame(
         {
             "Card": [_get_link_text(row[0]) for row in cardTable[1:]],
             "ID": [row[2] for row in cardTable[1:]],
@@ -167,15 +195,17 @@ def loadCardDatabase():
             "Rarity": [row[4] for row in cardTable[1:]],
             "Type": [row[5] for row in cardTable[1:]],
             "Cost": [row[6] for row in cardTable[1:]],
-        }
+        },
     )
+    df["ID"] = pd.to_numeric(df["ID"], downcast="integer")
+    return df
 
 
 def loadArtifactDatabase():
     with open(os.path.join(curDir, "resources", "artifactTable.txt"), "r") as f:
         artifactTable = wtp.parse(f.read()).tables[0].data()
 
-    return pd.DataFrame(
+    df = pd.DataFrame(
         {
             "Artifact": [_get_link_text(row[0]) for row in artifactTable[1:]],
             "ID": [row[1] for row in artifactTable[1:]],
@@ -189,8 +219,10 @@ def loadArtifactDatabase():
                 for row in artifactTable[1:]
             ],
             "Rarity": [row[3] for row in artifactTable[1:]],
-        }
+        },
     )
+    df["ID"] = pd.to_numeric(df["ID"], downcast="integer")
+    return df
 
 
 #################
