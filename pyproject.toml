@@ -1,26 +1,36 @@
 [build-system]
-requires        = ["setuptools"]
-build-baclemd   = "setuptools.build_meta"
+build-baclemd = "setuptools.build_meta"
+requires = [
+    "setuptools",
+]
 
 [project]
-name        = "StarVadersStats"
-version     = "0.1"
-description = "Python package to plot StarVaders stats"
-readme      = "README.md"
-authors     = [{name = "Habarug"}]
-
+authors = [
+    { name = "Habarug" },
+]
 dependencies = [
+    "matplotlib",
     "numpy",
     "pandas",
-    "matplotlib",
     "wikitextparser",
 ]
+description = "Python package to plot StarVaders stats"
+name = "StarVadersStats"
+readme = "README.md"
+version = "0.1"
 
 [project.optional-dependencies]
 dev = [
+    "pre-commit",
     "ruff",
 ]
 
 [tool.ruff]
-exclude = ["*__init__.py"]
-lint.extend-select = ["I"]
+exclude = [
+    "*__init__.py",
+]
+
+[tool.ruff.lint]
+extend-select = [
+    "I",
+]
