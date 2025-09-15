@@ -10,22 +10,22 @@ curDir = os.path.dirname(__file__)
 
 class Load:
     pilotDict = {
-        "0": "Roxy",
-        "1": "Zeke",
-        "3": "Noel",
-        "100": "Shun",
-        "101": "Hali",
-        "102": "Kaia",
-        "200": "Iris",
-        "201": "Xenn",
-        "202": "Garu",
-        "203": "Sura",
+        0: "Roxy",
+        1: "Zeke",
+        3: "Noel",
+        100: "Shun",
+        101: "Hali",
+        102: "Kaia",
+        200: "Iris",
+        201: "Xenn",
+        202: "Garu",
+        203: "Sura",
     }
 
     classDict = {
-        "0": "Gunner",
-        "1": "Stinger",
-        "2": "Keeper",
+        0: "Gunner",
+        1: "Stinger",
+        2: "Keeper",
     }
 
     def __init__(self, rootDir):
@@ -254,15 +254,15 @@ def _get_link_text(string):
 
 
 def _get_pilotname(i):
-    if str(i) in Load.pilotDict:
-        return Load.pilotDict[str(i)]
+    if int(i) in Load.pilotDict:
+        return Load.pilotDict[int(i)]
     else:
         return str(i)
 
 
 def _get_classname(i):
-    if str(i) in Load.classDict:
-        return Load.classDict[str(i)]
+    if int(i) in Load.classDict:
+        return Load.classDict[int(i)]
     else:
         return str(i)
 
