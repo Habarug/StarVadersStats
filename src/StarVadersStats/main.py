@@ -116,3 +116,10 @@ class SVStats:
     @property
     def df_truevictories(self):
         return self.df_runs[self.df_runs["Success"] == 3]
+
+
+def quickplot():
+    svs = SVStats()
+
+    fig, ax = svs.plot_runSuccess()
+    fig.show()

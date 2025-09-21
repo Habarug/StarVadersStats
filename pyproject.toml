@@ -9,6 +9,7 @@ authors = [
     { name = "Habarug" },
 ]
 dependencies = [
+    "PyQt5",
     "matplotlib",
     "numpy",
     "pandas",
