@@ -32,22 +32,34 @@ class SVStats:
         self._df_cards = self._load.get_df_cards()
         self._df_artifacts = self._load.get_df_artifacts()
 
+    ################################
+    # region PROPERTIES AND SHORTCUTS
+    ################################
+
+    @property
+    def carddb(self):
+        return self._load.carddb
+
+    @property
+    def artifactdb(self):
+        return self._load.artifactdb
+
     @property
     def df_cards(self):
         return self._df_cards[
-            self._load.carddb[
-                (self._load.carddb["Rarity"] != "Starter")
-                & (self._load.carddb["Rarity"] != "Created")
-                & (self._load.carddb["Rarity"] != "Junk")
+            self.carddb[
+                (self.carddb["Rarity"] != "Starter")
+                & (self.carddb["Rarity"] != "Created")
+                & (self.carddb["Rarity"] != "Junk")
             ]["Card"]
         ]
 
     @property
     def df_artifacts(self):
         return self._df_artifacts[
-            self._load.artifactdb[
-                (self._load.artifactdb["Rarity"] != "Starter")
-                & (self._load.artifactdb["Rarity"] != "N/A")
+            self.artifactdb[
+                (self.artifactdb["Rarity"] != "Starter")
+                & (self.artifactdb["Rarity"] != "N/A")
             ]["Artifact"]
         ]
 
