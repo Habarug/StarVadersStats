@@ -12,6 +12,7 @@ dependencies = [
     "matplotlib",
     "numpy",
     "pandas",
+    "thefuzz",
     "wikitextparser",
 ]
 description = "Python package to plot StarVaders stats"
