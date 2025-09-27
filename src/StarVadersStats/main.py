@@ -2,6 +2,7 @@ import os
 
 import matplotlib.pyplot as plt
 import pandas as pd
+from tabulate import tabulate
 from thefuzz.process import extractOne
 
 from . import _load
@@ -69,9 +70,54 @@ class SVStats:
 
         return fig, ax
 
-    #################################
-    # region PROPERTIES AND SHORTCUTS
-    #################################
+    ###############
+    # region PRINTS
+    ###############
+
+    def print_pilot_table(self):
+        table = []
+        headers = [
+            "Pilot",
+            "Runs",
+            "Victories",
+            "True victories",
+            "Max difficulty (true)",
+            "Favorite card",
+            "Favorite artifact",
+        ]
+        for pilot in self.pilots:
+            df_pilot = self.df_runs[self.df_runs["Pilot"] == pilot]
+            n = len(df_pilot)
+            n_wins = len(df_pilot[df_pilot["Success"] >= 1])
+            n_truewins = len(df_pilot[df_pilot["Success"] == 3])
+
+            row = [pilot]
+            row.append(n)
+            row.append(f"{n_wins} ({n_wins / n * 100:.0f}%)")
+            row.append(f"{n_truewins} ({n_truewins / n * 100:.0f}%)")
+
+            row.append(
+                self._load.difficultyDict[
+                    df_pilot[df_pilot["Success"] == 3]["Difficulty"].max()
+                ]
+            )
+
+            cards = self.df_cards[self.df_runs["Pilot"] == pilot].sum()
+            row.append(
+                f"{cards.idxmax()} ({cards.max()}, {cards.max() / n * 100:.0f}%)"
+            )
+
+            artifacts = self.df_artifacts[self.df_runs["Pilot"] == pilot].sum()
+            row.append(
+                f"{artifacts.idxmax()} ({artifacts.max()}, {artifacts.max() / n * 100:.0f}%)"
+            )
+            table.append(row)
+
+        print(tabulate(table, headers=headers))
+
+    ###################
+    # region PROPERTIES
+    ###################
 
     @property
     def carddb(self):
@@ -121,5 +167,6 @@ class SVStats:
 def quickplot():
     svs = SVStats()
 
+    svs.print_pilot_table()
     fig, ax = svs.plot_runSuccess()
     fig.show()
