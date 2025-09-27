@@ -87,7 +87,7 @@ class Load:
                 ],
                 "MaxCombo": [run["rundata"]["MaxCombo"] for _, run in runs.items()],
                 "FinalRoom": [
-                    f"{run['rundata']['actNumber']}.{run['rundata']['dayNumber']}"
+                    run["rundata"]["actNumber"] + run["rundata"]["dayNumber"] / 10
                     for _, run in runs.items()
                 ],
                 "Seed": [run["rundata"]["seed"] for _, run in runs.items()],
