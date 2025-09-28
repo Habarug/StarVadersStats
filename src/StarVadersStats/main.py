@@ -1,6 +1,8 @@
 import os
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from tabulate import tabulate
 from thefuzz.process import extractOne
@@ -67,6 +69,68 @@ class SVStats:
         ax.set_xlabel("Run")
 
         fig.set_size_inches(6, 3)
+
+        return fig, ax
+
+    def plot_finalRoom(self, pilot=None):
+        if not pilot:
+            df = self.df_runs
+        else:
+            pilot = extractOne(pilot, self._load.pilotDict)[0]
+            df = self.df_runs[self.df_runs["Pilot"] == pilot]
+
+        fig, ax = plt.subplots()
+
+        cmap = plt.get_cmap("Set2_r", lut=max(self._load.difficultyDict) + 1)
+        cbar = plt.colorbar(
+            mpl.cm.ScalarMappable(norm="linear", cmap=cmap),
+            ax=ax,
+        )
+
+        diffs = ["Other"] + [
+            diff for key, diff in self._load.difficultyDict.items() if key > 0
+        ]
+        cbar.set_ticks([1 / len(diffs) * (i + 0.5) for i in range(len(diffs))])
+        cbar.set_ticklabels(diffs)
+
+        rooms = []
+        idxs = [0]
+        df_deaths = df[(df["Success"] == 2) | (df["Success"] == 0)]
+
+        for act in np.sort(self.df_runs["FinalRoom"].round().unique()):
+            rMax = self.df_runs[
+                (self.df_runs["FinalRoom"] > act)
+                & (self.df_runs["FinalRoom"] < act + 1)
+            ]["FinalRoom"].max()
+
+            roomsAct = act + 0.1 + np.arange(round((rMax - act) * 10)) * 0.1
+            rooms.extend(roomsAct)
+
+            for room in roomsAct:
+                df_room = df_deaths[df_deaths["FinalRoom"] == room]
+
+                bottom = 0
+                for diff in np.sort(df_room["Difficulty"].unique()):
+                    n_diff = sum(df_room["Difficulty"] == diff)
+                    ax.bar(
+                        idxs[-1],
+                        n_diff,
+                        bottom=bottom,
+                        color=cmap(max(0, diff)),
+                        edgecolor="black",
+                    )
+                    bottom += n_diff
+                idxs.append(idxs[-1] + 1)
+            rooms.append(None)
+            idxs.append(idxs[-1] + 1)
+
+        ax.set_xticks(range(len(rooms)))
+        ax.set_xticklabels([f"{room:.1f}" if room else None for room in rooms])
+        ax.set_ylabel("Number of deaths")
+        ax.set_xlabel("Act.Day")
+        ax.grid(axis="y")
+        ax.set_axisbelow(True)
+        fig.set_size_inches(8, 3)
 
         return fig, ax
 
