@@ -235,3 +235,6 @@ def quickplot():
     svs.print_pilot_table()
     fig, ax = svs.plot_runSuccess()
     fig.show()
+
+    fig, ax = svs.plot_finalRoom()
+    fig.show()
