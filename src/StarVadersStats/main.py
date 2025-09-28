@@ -130,7 +130,8 @@ class SVStats:
         ax.set_xlabel("Act.Day")
         ax.grid(axis="y")
         ax.set_axisbelow(True)
-        fig.set_size_inches(8, 3)
+        ax.set_xlim([ax.get_xticks()[0] - 0.5, ax.get_xticks()[-1] - 0.5])
+        fig.set_size_inches(9, 3)
 
         return fig, ax
 
