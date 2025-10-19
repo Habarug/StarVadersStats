@@ -91,6 +91,9 @@ class Load:
                     for _, run in runs.items()
                 ],
                 "Seed": [run["rundata"]["seed"] for _, run in runs.items()],
+                "Act1Boss": [run["rundata"]["Act1Boss"] for _, run in runs.items()],
+                "Act2Boss": [run["rundata"]["Act2Boss"] for _, run in runs.items()],
+                "Act3Boss": [run["rundata"]["Act3Boss"] for _, run in runs.items()],
             }
         )
 

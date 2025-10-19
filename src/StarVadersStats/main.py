@@ -135,6 +135,83 @@ class SVStats:
 
         return fig, ax
 
+    def plot_bossWinRate(self, pilot=None):
+        if not pilot:
+            df = self.df_runs
+            titleText = "All pilots"
+        else:
+            pilot = extractOne(pilot, self._load.pilotDict)[0]
+            df = self.df_runs[self.df_runs["Pilot"] == pilot]
+            titleText = pilot
+
+        winRateActs = []
+        bosses = []
+        i = 0
+
+        fig, ax = plt.subplots()
+
+        for finalRoom, col in zip(
+            [1.6, 2.5, 3.5], ["Act1Boss", "Act2Boss", "Act3Boss"]
+        ):
+            df = df[df["FinalRoom"] >= finalRoom]
+            winRateActs.append(sum(df["FinalRoom"] > finalRoom) / len(df) * 100)
+            bossesAct = df[col].sort_values().unique()
+            bosses.extend(bossesAct)
+
+            vecAct = []
+            winRateAct = []
+
+            for boss in bossesAct:
+                df_boss = df[df[col] == boss]
+                winRateAct.append(
+                    sum(df_boss["FinalRoom"] > finalRoom) / len(df_boss) * 100
+                )
+                vecAct.append(i)
+                ax.text(
+                    i,
+                    winRateAct[-1] / 2,
+                    f"{int(winRateAct[-1])}%",
+                    ha="center",
+                    va="center",
+                    rotation="vertical",
+                )
+                i += 1
+
+            ax.bar(vecAct, winRateAct)
+            ax.plot(vecAct, [winRateActs[-1]] * len(vecAct), c="black", ls="--")
+            if winRateActs[-1]:  # skip if 0
+                ax.text(
+                    np.mean(vecAct),
+                    max(winRateAct) + 2,
+                    f"{int(winRateActs[-1])}%",
+                    ha="center",
+                    va="baseline",
+                )
+
+        df = df[df["FinalRoom"] == 4.1]
+        winRateActs.append(sum(df["Success"] == 2) / len(df) * 100)
+        ax.bar(i, winRateActs[-1])
+        ax.text(
+            i,
+            winRateActs[-1] / 2,
+            f"{int(winRateActs[-1])}%",
+            ha="center",
+            va="center",
+            rotation="vertical",
+        )
+        bosses.append("Overseer")
+
+        ax.set_xticks(range(len(bosses)))
+        ax.set_xticklabels(bosses)
+
+        ax.set_ylim([0, 110])
+        ax.set_ylabel("Win rate [%]")
+        ax.set_xlabel("Boss")
+        ax.set_title(titleText)
+        fig.set_size_inches(6, 3)
+
+        return fig, ax
+
     ###############
     # region PRINTS
     ###############
