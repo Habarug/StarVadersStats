@@ -229,7 +229,7 @@ class SVStats:
             for ids in range(4):
                 n = sum(df_pack["Success"] == ids)
                 ax.bar(idx, n, bottom=bottom, color=cmap(ids))
-                if n > maxruns / 10:
+                if n > maxruns * 0.05:
                     ax.text(
                         idx,
                         bottom + n / 2,
