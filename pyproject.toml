@@ -8,15 +8,10 @@ requires = [
 authors = [
     { name = "Habarug" },
 ]
-dependencies = [
-    "PyQt5",
-    "matplotlib",
-    "numpy",
-    "pandas",
-    "tabulate",
-    "wikitextparser",
-]
 description = "Python package to plot StarVaders stats"
+dynamic = [
+    "dependencies",
+]
 name = "StarVadersStats"
 readme = "README.md"
 version = "0.1"
@@ -35,4 +30,9 @@ exclude = [
 [tool.ruff.lint]
 extend-select = [
     "I",
+]
+
+[tool.setuptools.dynamic.dependencies]
+file = [
+    "requirements.txt",
 ]
