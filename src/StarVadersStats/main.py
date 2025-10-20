@@ -271,13 +271,27 @@ class SVStats:
 
     @property
     def df_cards(self):
-        return self._df_cards[
+        df = self._df_cards[
             self.carddb[
                 (self.carddb["Rarity"] != "Starter")
                 & (self.carddb["Rarity"] != "Created")
                 & (self.carddb["Rarity"] != "Junk")
             ]["Card"]
+        ].copy()
+        # Manually remove non-starter cards in starter decks
+        df["Nova Bomb"] = [
+            max(row["Nova Bomb"] - 1, 0)
+            if (self.df_runs.loc[idx, "Pilot"] in ["Roxy", "Zeke"])
+            else row["Nova Bomb"]
+            for idx, row in self._df_cards.iterrows()
         ]
+        df["Artillery Strike"] = [
+            max(row["Artillery Strike"] - 1, 0)
+            if self.df_runs.loc[idx, "Pilot"] == "Noel"
+            else row["Artillery Strike"]
+            for idx, row in self._df_cards.iterrows()
+        ]
+        return df
 
     @property
     def df_artifacts(self):
