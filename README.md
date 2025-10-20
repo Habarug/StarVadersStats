@@ -7,21 +7,10 @@ Just a small package to plot stuff from your StarVaders run history.
 
 
 ## Setup
-- Optional, but recommended: Create and activate virtual environment:
+- Install the dependencies:
 
-```
-python -m venv .venv
-
-#Windows
-.venv\Scripts\activate
-#MacOS and linux
-source .venv/bin/activate
-```
-
-- Install StarVadersStats and dependencies:
-
-```
-pip install -e .
+```bash
+pip install -r requirements.txt
 ```
 
 - Copy the ```history``` directory from your StarVaders save data into the ```data``` directory.
@@ -40,10 +29,10 @@ pip install -e .
 - Import and instantiate SVStats
 
 ```python
-from StarVadersStats import SVStats
+from src.StarVadersStats import SVStats
 svs = SVStats(
     #Optionally supply path to history directly
-    #Required if data/history not present in current directory
+    #Required if history is not copied to data-directory
     rundir = None
 )
 ```
@@ -51,7 +40,7 @@ svs = SVStats(
 - Plot run success:
 ```python
 fig, ax = svs.plot_runSuccess(
-    pilot=None #Optionally filter to specific pilot
+    pilot=None #Optionally filter to specific pilot or class
 )
 ```
 ![runSuccess](figs/runSuccess.png)
@@ -59,10 +48,26 @@ fig, ax = svs.plot_runSuccess(
 - Plot final room for failed runs:
 ```python
 fig, ax = svs.plot_finalRoom(
-    pilot=None #Optionally filter to specific pilot
+    pilot=None #Optionally filter to specific pilot or class
 )
 ```
 ![finalRoom](figs/finalRoom.png)
+
+- Plot win rate versus the different bosses:
+```python
+fig, ax = svs.plot_bossWinRate(
+    pilot=None #Optionally filter to specific pilot or class
+)
+```
+![bossWinRate](figs/bossWinRate.png)
+
+- Plot your runs with the different packs:
+```python
+fig, ax = svs.plot_packSuccess(
+    pilot=None #Optionally filter to specific pilot or class
+)
+```
+![packSuccess](figs/packSuccess.png)
 
 - Print overview table:
 ```python
