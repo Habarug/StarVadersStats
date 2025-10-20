@@ -210,12 +210,8 @@ class SVStats:
         if not titleText:
             return
         df_packs = self.df_packs.iloc[df.index]
+        maxruns = df_packs.sum().max()
         fig, ax = plt.subplots()
-
-        fails = []
-        false = []
-        act4 = []
-        wins = []
 
         nSuccess = len(self.df_runs["Success"].unique())
         cmap = plt.get_cmap("Set2_r", lut=nSuccess)
@@ -228,17 +224,21 @@ class SVStats:
 
         for idx, pack in enumerate(df_packs.columns):
             df_pack = df[df_packs[pack]]
-            fails.append(sum(df_pack["Success"] == 0))
-            false.append(sum(df_pack["Success"] == 1))
-            act4.append(sum(df_pack["Success"] == 2))
-            wins.append(sum(df_pack["Success"] == 3))
 
-            ax.bar(idx, fails[-1], color=cmap(0))
-            ax.bar(idx, false[-1], bottom=fails[-1], color=cmap(1))
-            ax.bar(idx, act4[-1], bottom=fails[-1] + false[-1], color=cmap(2))
-            ax.bar(
-                idx, wins[-1], bottom=fails[-1] + false[-1] + act4[-1], color=cmap(3)
-            )
+            bottom = 0
+            for ids in range(4):
+                n = sum(df_pack["Success"] == ids)
+                ax.bar(idx, n, bottom=bottom, color=cmap(ids))
+                if n > maxruns / 10:
+                    ax.text(
+                        idx,
+                        bottom + n / 2,
+                        f"{int(n / len(df_pack) * 100)}%",
+                        ha="center",
+                        va="center",
+                        size=7,
+                    )
+                bottom += n
 
         ax.set_xticks(range(len(df_packs.columns)))
         ax.set_xticklabels(df_packs.columns, rotation=90)
