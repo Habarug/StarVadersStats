@@ -205,6 +205,48 @@ class SVStats:
 
         return fig, ax
 
+    def plot_packSuccess(self, pilot=None):
+        df, titleText = self._filterpilot(pilot)
+        if not titleText:
+            return
+        df_packs = self.df_packs.iloc[df.index]
+        fig, ax = plt.subplots()
+
+        fails = []
+        false = []
+        act4 = []
+        wins = []
+
+        nSuccess = len(self.df_runs["Success"].unique())
+        cmap = plt.get_cmap("Set2_r", lut=nSuccess)
+        cbar = plt.colorbar(
+            mpl.cm.ScalarMappable(norm="linear", cmap=cmap),
+            ax=ax,
+        )
+        cbar.set_ticks([1 / nSuccess * (i + 0.5) for i in range(nSuccess)])
+        cbar.set_ticklabels(["Failure", "False victory", "Act 4 death", "True victory"])
+
+        for idx, pack in enumerate(df_packs.columns):
+            df_pack = df[df_packs[pack]]
+            fails.append(sum(df_pack["Success"] == 0))
+            false.append(sum(df_pack["Success"] == 1))
+            act4.append(sum(df_pack["Success"] == 2))
+            wins.append(sum(df_pack["Success"] == 3))
+
+            ax.bar(idx, fails[-1], color=cmap(0))
+            ax.bar(idx, false[-1], bottom=fails[-1], color=cmap(1))
+            ax.bar(idx, act4[-1], bottom=fails[-1] + false[-1], color=cmap(2))
+            ax.bar(
+                idx, wins[-1], bottom=fails[-1] + false[-1] + act4[-1], color=cmap(3)
+            )
+
+        ax.set_xticks(range(len(df_packs.columns)))
+        ax.set_xticklabels(df_packs.columns, rotation=90)
+        ax.set_ylabel("Number of runs")
+
+        fig.set_size_inches(9, 3)
+        return fig, ax
+
     ###############
     # region PRINTS
     ###############
