@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from tabulate import tabulate
-from thefuzz.process import extractOne
 
 from . import _load
 
@@ -41,13 +40,11 @@ class SVStats:
     ##############
 
     def plot_runSuccess(self, pilot=None):
-        fig, ax = plt.subplots()
+        df, titleText = self._filterpilot(pilot)
+        if not titleText:
+            return
 
-        if not pilot:
-            df = self.df_runs
-        else:
-            pilot = extractOne(pilot, self._load.pilotDict)[0]
-            df = self.df_runs[self.df_runs["Pilot"] == pilot]
+        fig, ax = plt.subplots()
 
         sct = ax.scatter(df.index, df["Difficulty"], c=df["Success"], marker="o")
         cbar = plt.colorbar(sct, ax=ax)
@@ -67,17 +64,15 @@ class SVStats:
         ax.grid()
         ax.set_ylabel("Difficulty")
         ax.set_xlabel("Run")
-
+        ax.set_title(titleText)
         fig.set_size_inches(6, 3)
 
         return fig, ax
 
     def plot_finalRoom(self, pilot=None):
-        if not pilot:
-            df = self.df_runs
-        else:
-            pilot = extractOne(pilot, self._load.pilotDict)[0]
-            df = self.df_runs[self.df_runs["Pilot"] == pilot]
+        df, titleText = self._filterpilot(pilot)
+        if not titleText:
+            return
 
         fig, ax = plt.subplots()
 
@@ -131,22 +126,16 @@ class SVStats:
         ax.grid(axis="y")
         ax.set_axisbelow(True)
         ax.set_xlim([ax.get_xticks()[0] - 0.5, ax.get_xticks()[-1] - 0.5])
+        ax.set_title(titleText)
         fig.set_size_inches(9, 3)
 
         return fig, ax
 
-    def plot_bossWinRate(self, pilot=None, pilotclass=None):
-        if pilot:
-            pilot = extractOne(pilot, self._load.pilotDict)[0]
-            df = self.df_runs[self.df_runs["Pilot"] == pilot]
-            titleText = pilot
-        elif pilotclass:
-            pilotclass = extractOne(pilotclass, self.df_runs["Class"].unique())[0]
-            df = self.df_runs[self.df_runs["Class"] == pilotclass]
-            titleText = pilotclass
-        else:
-            df = self.df_runs
-            titleText = "All pilots"
+    def plot_bossWinRate(self, pilot=None):
+        df, titleText = self._filterpilot(pilot)
+        if not titleText:
+            return
+
         winRateActs = []
         bosses = []
         i = 0
@@ -321,6 +310,27 @@ class SVStats:
     @property
     def df_truevictories(self):
         return self.df_runs[self.df_runs["Success"] == 3]
+
+    ##################
+    # region UTILITIES
+    ##################
+
+    def _filterpilot(self, pilot):
+        """Returns runs and title for a specific pilot or class"""
+        if pilot:
+            if pilot in self._load.pilotDict.values():
+                df = self.df_runs[self.df_runs["Pilot"] == pilot]
+                titleText = pilot
+            elif pilot in self.df_runs["Class"].unique():
+                df = self.df_runs[self.df_runs["Class"] == pilot]
+                titleText = pilot
+            else:
+                print("Pilot or class not found, check spelling")
+                return None, None
+        else:
+            df = self.df_runs
+            titleText = "All pilots"
+        return df, titleText
 
 
 def quickplot():
