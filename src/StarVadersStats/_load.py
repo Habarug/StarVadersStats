@@ -21,11 +21,38 @@ class Load:
         202: "Garu",
         203: "Sura",
     }
-
     classDict = {
         0: "Gunner",
         1: "Stinger",
         2: "Keeper",
+    }
+    packDict = {
+        0: "Tempest",
+        1: "Spectral",
+        2: "Repeater",
+        3: "Guardian",
+        4: "Inventor",
+        5: "Salvage",
+        6: "Abyssal",
+        7: "Tectonic",
+        8: "C-C-Combo",
+        9: "Dimensional",
+        10: "Beach",
+        11: "Full Moon",
+        12: "Academy",
+        13: "Holiday",
+        14: "Temporal",
+    }
+    bossDict = {
+        4: "Mothership",
+        5: "Mega Blob",
+        6: "Kraken",
+        7: "Shambler",
+        9: "Grandmaster",
+        10: "Nessie",
+        12: "Queen Bee",
+        13: "Eclipse",
+        14: "Hemophage",
     }
 
     def __init__(self, rootDir):
@@ -67,7 +94,10 @@ class Load:
                     else 0
                     for _, run in runs.items()
                 ],
-                "Packs": [run["rundata"]["Packs"] for _, run in runs.items()],
+                "Packs": [
+                    [self.packDict[pack] for pack in run["rundata"]["Packs"]]
+                    for _, run in runs.items()
+                ],
                 "nCards": [
                     len(run["playerdata"]["deckCardDataList"])
                     for _, run in runs.items()
@@ -91,9 +121,15 @@ class Load:
                     for _, run in runs.items()
                 ],
                 "Seed": [run["rundata"]["seed"] for _, run in runs.items()],
-                "Act1Boss": [run["rundata"]["Act1Boss"] for _, run in runs.items()],
-                "Act2Boss": [run["rundata"]["Act2Boss"] for _, run in runs.items()],
-                "Act3Boss": [run["rundata"]["Act3Boss"] for _, run in runs.items()],
+                "Act1Boss": [
+                    self.bossDict[run["rundata"]["Act1Boss"]] for _, run in runs.items()
+                ],
+                "Act2Boss": [
+                    self.bossDict[run["rundata"]["Act2Boss"]] for _, run in runs.items()
+                ],
+                "Act3Boss": [
+                    self.bossDict[run["rundata"]["Act3Boss"]] for _, run in runs.items()
+                ],
             }
         )
 

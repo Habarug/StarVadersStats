@@ -135,15 +135,18 @@ class SVStats:
 
         return fig, ax
 
-    def plot_bossWinRate(self, pilot=None):
-        if not pilot:
-            df = self.df_runs
-            titleText = "All pilots"
-        else:
+    def plot_bossWinRate(self, pilot=None, pilotclass=None):
+        if pilot:
             pilot = extractOne(pilot, self._load.pilotDict)[0]
             df = self.df_runs[self.df_runs["Pilot"] == pilot]
             titleText = pilot
-
+        elif pilotclass:
+            pilotclass = extractOne(pilotclass, self.df_runs["Class"].unique())[0]
+            df = self.df_runs[self.df_runs["Class"] == pilotclass]
+            titleText = pilotclass
+        else:
+            df = self.df_runs
+            titleText = "All pilots"
         winRateActs = []
         bosses = []
         i = 0
@@ -202,7 +205,7 @@ class SVStats:
         bosses.append("Overseer")
 
         ax.set_xticks(range(len(bosses)))
-        ax.set_xticklabels(bosses)
+        ax.set_xticklabels(bosses, rotation=90)
 
         ax.set_ylim([0, 110])
         ax.set_ylabel("Win rate [%]")
