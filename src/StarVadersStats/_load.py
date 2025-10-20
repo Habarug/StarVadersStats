@@ -94,10 +94,6 @@ class Load:
                     else 0
                     for _, run in runs.items()
                 ],
-                "Packs": [
-                    [self.packDict[pack] for pack in run["rundata"]["Packs"]]
-                    for _, run in runs.items()
-                ],
                 "nCards": [
                     len(run["playerdata"]["deckCardDataList"])
                     for _, run in runs.items()
@@ -186,6 +182,19 @@ class Load:
             return self.artifactdb[self.artifactdb["ID"] == int(ID)]["Artifact"].iloc[0]
         else:
             return str(ID)
+
+    def get_df_packs(self):
+        self.pack_decks = [
+            [self.packDict[pack] for pack in run["rundata"]["Packs"]]
+            for _, run in self.runs.items()
+        ]
+
+        return pd.DataFrame(
+            {
+                pack: [(pack in deck) for deck in self.pack_decks]
+                for pack in self.packDict.values()
+            }
+        )
 
     def _make_difficulty_dict(self):
         difficulties = set(

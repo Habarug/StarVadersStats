@@ -32,6 +32,7 @@ class SVStats:
 
         self._load = _load.Load(self.rundir)
         self.df_runs = self._load.get_df_runs()
+        self.df_packs = self._load.get_df_packs()
         self._df_cards = self._load.get_df_cards()
         self._df_artifacts = self._load.get_df_artifacts()
 
