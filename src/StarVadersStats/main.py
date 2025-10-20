@@ -243,6 +243,7 @@ class SVStats:
         ax.set_xticks(range(len(df_packs.columns)))
         ax.set_xticklabels(df_packs.columns, rotation=90)
         ax.set_ylabel("Number of runs")
+        ax.set_title(titleText)
 
         fig.set_size_inches(9, 3)
         return fig, ax
