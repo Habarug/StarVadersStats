@@ -315,18 +315,9 @@ class SVStats:
             ]["Card"]
         ].copy()
         # Manually remove non-starter cards in starter decks
-        df["Nova Bomb"] = [
-            max(row["Nova Bomb"] - 1, 0)
-            if (self.df_runs.loc[idx, "Pilot"] in ["Roxy", "Zeke"])
-            else row["Nova Bomb"]
-            for idx, row in self._df_cards.iterrows()
-        ]
-        df["Artillery Strike"] = [
-            max(row["Artillery Strike"] - 1, 0)
-            if self.df_runs.loc[idx, "Pilot"] == "Noel"
-            else row["Artillery Strike"]
-            for idx, row in self._df_cards.iterrows()
-        ]
+        df = self._removenonestarterstarters(df, ["Roxy", "Zeke"], "Nova Bomb")
+        df = self._removenonestarterstarters(df, "Noel", "Artillery Strike")
+        df = self._removenonestarterstarters(df, "Shun", ["Cleave", "Kunai"])
         return df
 
     @property
@@ -375,6 +366,20 @@ class SVStats:
             df = self.df_runs
             titleText = "All pilots"
         return df, titleText
+
+    def _removenonestarterstarters(self, df, pilots, cards):
+        if isinstance(pilots, str):
+            pilots = [pilots]
+        if isinstance(cards, str):
+            cards = [cards]
+        for card in cards:
+            df[card] = [
+                max(row[card] - 1, 0)
+                if (self.df_runs.loc[idx, "Pilot"] in pilots)
+                else row[card]
+                for idx, row in self._df_cards.iterrows()
+            ]
+        return df
 
 
 def quickplot():
