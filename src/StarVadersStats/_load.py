@@ -208,6 +208,8 @@ class Load:
                         "ChallengeName"
                     ]
                     break
+        if 0 in self.difficultyDict.keys():
+            self.difficultyDict[0] = "Other"
 
 
 def loadRuns(rootDir):
