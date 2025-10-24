@@ -36,6 +36,8 @@ class SVStats:
         self._df_cards = self._load.get_df_cards()
         self._df_artifacts = self._load.get_df_artifacts()
 
+        self._rooms = None
+
     ##############
     # region PLOTS
     ##############
@@ -93,7 +95,7 @@ class SVStats:
         idxs = [0]
         df_deaths = df[(df["Success"] == 2) | (df["Success"] == 0)]
 
-        for act in np.sort(self.df_runs["FinalRoom"].round().unique()):
+        for act in self.acts:
             rMax = self.df_runs[
                 (self.df_runs["FinalRoom"] > act)
                 & (self.df_runs["FinalRoom"] < act + 1)
@@ -296,6 +298,26 @@ class SVStats:
     ###################
     # region PROPERTIES
     ###################
+
+    @property
+    def acts(self):
+        return np.unique(np.floor(self.df_runs["FinalRoom"]).unique())
+
+    @property
+    def rooms(self):
+        if not self._rooms:
+            rooms = []
+
+            for act in self.acts:
+                rMax = self.df_runs[
+                    (self.df_runs["FinalRoom"] > act)
+                    & (self.df_runs["FinalRoom"] < act + 1)
+                ]["FinalRoom"].max()
+                roomsAct = act + 0.1 + np.arange(round((rMax - act) * 10)) * 0.1
+                rooms.extend(roomsAct)
+            self._rooms = rooms
+
+        return self._rooms
 
     @property
     def carddb(self):
